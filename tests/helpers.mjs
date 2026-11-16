@@ -3,7 +3,7 @@ import {mkdir,writeFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 export const base=process.env.BASE_URL||'http://127.0.0.1:4173';
 export const browser=()=>chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
-export async function pageFor(b,width=1440,height=1000){const context=await b.newContext({viewport:{width,height},reducedMotion:'reduce',acceptDownloads:true});const page=await context.newPage();page.setDefaultTimeout(6000);page.setDefaultNavigationTimeout(12000);const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',msg=>{if(msg.type()==='error')errors.push(msg.text());});return {context,page,errors};}
+export async function pageFor(b,width=Number(process.env.VIEWPORT_WIDTH)||1440,height=Number(process.env.VIEWPORT_HEIGHT)||1000){const context=await b.newContext({viewport:{width,height},reducedMotion:'reduce',acceptDownloads:true});const page=await context.newPage();page.setDefaultTimeout(6000);page.setDefaultNavigationTimeout(12000);const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',msg=>{if(msg.type()==='error')errors.push(msg.text());});return {context,page,errors};}
 export async function login(page,role='employee'){
  if(!page.url().includes('/signin'))await page.goto(base+'/signin');
  await page.getByLabel('Email address').fill(role.includes('@')?role:`${role}@kestrel.example`);
@@ -13,9 +13,10 @@ export async function login(page,role='employee'){
  await page.getByRole('button',{name:'Sign out',exact:true}).waitFor();
  await page.locator('main h1').waitFor();
  assert.ok(!page.url().includes('/signin'),'Sign-in must remain on an authenticated screen');
+ if(process.env.START_THEME&&(await page.locator('html').getAttribute('data-theme'))!==process.env.START_THEME)await page.getByRole('button',{name:`Use ${process.env.START_THEME} theme`}).click();
 }
 export async function signout(page){await page.getByRole('button',{name:'Sign out',exact:true}).click();await page.waitForURL('**/signin');}
-export async function shot(page,name,folder='running'){
+export async function shot(page,name,folder=process.env.SHOT_FOLDER||'running'){
  if(page.url().startsWith(base)&&!page.url().includes('/signin'))await page.locator('main h1').waitFor();
  await mkdir(`docs/screenshots/${folder}`,{recursive:true});await page.evaluate(()=>document.fonts.ready);await page.screenshot({path:`docs/screenshots/${folder}/${name}.png`,fullPage:true,mask:[page.locator('input[autocomplete="current-password"]')],maskColor:'#E3E6EC',animations:'disabled'});
 }

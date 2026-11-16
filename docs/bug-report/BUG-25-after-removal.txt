@@ -1,0 +1,9 @@
+BUG-25 · verified cleanup
+
+The generated .env.local file was deleted without displaying its contents.
+Shell verification: .env.local is absent; token value was never read into the conversation.
+Hosting API verification: environmentVariableNames: []
+Application-required environment variables: none.
+The deleted transient CLI variable was named VERCEL_OIDC_TOKEN.
+
+The historical deviation is explicitly retained in the log and final summary. No cloud storage or database was introduced.

@@ -1,0 +1,9 @@
+BUG-26 · actual CLI result, 2026-11-16T05:32:17Z
+
+Vercel CLI 64.2.0
+Retrieving project…
+> Found a repository in your local Git Config: https://github.com/DIVYAPRIYADHARSHINI-GIT/claimease.git
+> Connecting GitHub repository: https://github.com/DIVYAPRIYADHARSHINI-GIT/claimease
+> DIVYAPRIYADHARSHINI-GIT/claimease is already connected to your project.
+
+Command exit code: 1.

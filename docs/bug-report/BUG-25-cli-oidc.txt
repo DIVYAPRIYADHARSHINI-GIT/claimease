@@ -1,0 +1,8 @@
+BUG-25 · actual Vercel CLI messages, 2026-11-16T05:32:17Z
+
+> Downloading a fresh `VERCEL_OIDC_TOKEN` for claimease
+Downloading
+✓ Created .env.local file and added it to .gitignore
+
+This was an unrequested CLI side effect and a deviation from the no-token-storage instruction.
+Only the environment variable NAME is shown. Its value was never displayed, copied, used, committed or screenshotted.

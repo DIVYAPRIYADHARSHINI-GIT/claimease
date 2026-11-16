@@ -1,7 +1,7 @@
 {
-  "time": "2026-11-16T05:20:07.535Z",
+  "time": "2026-11-16T05:43:57.659Z",
   "base": "http://127.0.0.1:4173",
-  "audits": 184,
+  "audits": 192,
   "issues": 0,
   "results": [
     {
@@ -1285,6 +1285,46 @@
       "consoleErrors": []
     },
     {
+      "name": "finance-fx-review-light-1440",
+      "url": "http://127.0.0.1:4173/claims/sample-11",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-fx-review-light-1024",
+      "url": "http://127.0.0.1:4173/claims/sample-11",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-fx-review-light-768",
+      "url": "http://127.0.0.1:4173/claims/sample-11",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-fx-review-light-390",
+      "url": "http://127.0.0.1:4173/claims/sample-11",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
       "name": "finance-policy-light-1440",
       "url": "http://127.0.0.1:4173/policy",
       "violations": [],
@@ -1637,6 +1677,46 @@
     {
       "name": "finance-review-dark-390",
       "url": "http://127.0.0.1:4173/claims/sample-3",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-fx-review-dark-1440",
+      "url": "http://127.0.0.1:4173/claims/sample-11",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-fx-review-dark-1024",
+      "url": "http://127.0.0.1:4173/claims/sample-11",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-fx-review-dark-768",
+      "url": "http://127.0.0.1:4173/claims/sample-11",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-fx-review-dark-390",
+      "url": "http://127.0.0.1:4173/claims/sample-11",
       "violations": [],
       "serious": 0,
       "overflow": false,

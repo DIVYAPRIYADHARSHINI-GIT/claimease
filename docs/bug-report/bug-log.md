@@ -2,7 +2,7 @@
 
 Started during the initial preflight on 16 November 2026. Updated after executed regression checks; no fabricated failures. Original severity is retained even when residual risk is lower. All times below are UTC unless explicitly qualified. Setup/tool error text was logged when observed; some text-to-PNG evidence was rendered later, not captured from the original terminal. Original platform UI evidence for BUG-02 still needs the user. Screenshot password fields are masked; account/receipt data is fictional.
 
-Local verification before deployment: 459 unit/property/PDF-layout tests, 70 main browser checks, 8 storage scenarios, 12 extended workflow checks, 32 boundary-viewport checks, and 184 design/axe audits passed. Build/typecheck have zero errors and zero warnings. The 184 final audits have zero serious/critical findings, overflow, sub-12px text or undersized targets. The first failed matrix and timestamped browser failures are retained alongside the final evidence.
+Local verification before deployment: 459 unit/property/PDF-layout tests; the 70-check main browser suite passed in four configurations (desktop/mobile × light/dark); 8 storage scenarios, 12 extended workflow checks, 32 boundary-viewport checks, one policy-panel UI regression, and 192 design/axe audits passed. Build/typecheck have zero errors and zero warnings. The final audits have zero serious/critical findings, overflow, sub-12px text or undersized targets. The first failed matrix and timestamped browser failures are retained alongside the final evidence.
 
 ## BUG-01 — Workspace Git preflight failed
 - Date/time: 2026-11-16, initial preflight; exact seconds not recorded.
@@ -339,3 +339,59 @@ Local verification before deployment: 459 unit/property/PDF-layout tests, 70 mai
 - Status: Fixed.
 - Before screenshot: `screenshots/BUG-24-before-count.png`.
 - After screenshot: `screenshots/BUG-24-after-fixed.png`.
+
+## BUG-25 — Vercel link automatically created an unrequested local OIDC credential
+- Date/time: 2026-11-16T05:32:17Z; removed at approximately 05:32:45Z.
+- Where: existing Vercel CLI 64.2.0, `vercel link --yes --project claimease --scope divya-6411`.
+- Steps: linked the new hosting project using the authenticated Hobby scope.
+- Expected: link/create only the hosting project, with no token or environment-file download.
+- Actual: CLI printed `Downloading a fresh VERCEL_OIDC_TOKEN for claimease` and `Created .env.local file and added it to .gitignore` without an additional prompt.
+- Severity: High.
+- Root cause: this CLI version's link command automatically pulls an OIDC credential as a side effect. This deviated from the user's explicit no-token-storage instruction.
+- Fix: immediately informed the user; obtained only the file version using a read beyond EOF, then deleted the newly generated file without displaying, copying, using or committing its value. Verified .env.local is absent. No account/security settings were changed. Further deployment uses the already connected GitHub project rather than another link/pull operation.
+- Test added: file-absence check, secret scan and hosting API variable-name inspection; the project has no configured environment variables. The transient variable name was VERCEL_OIDC_TOKEN, not an application dependency.
+- Status: Fixed.
+- Before screenshot: `screenshots/BUG-25-before-cli-side-effect.png` shows only CLI messages, never the environment file or token value.
+- After screenshot: `screenshots/BUG-25-after-fixed.png`.
+
+## BUG-26 — Redundant Git connect command exits nonzero after automatic connection
+- Date/time: 2026-11-16T05:32:17Z.
+- Where: `vercel git connect` immediately after project linking.
+- Steps: explicitly connected the requested GitHub repository after link had already connected it automatically.
+- Expected: an idempotent success response.
+- Actual: command exited 1 with `DIVYAPRIYADHARSHINI-GIT/claimease is already connected to your project.`
+- Severity: Low.
+- Root cause: the link command already completed the repository connection; the second command treats this as a nonzero outcome.
+- Fix: did not repeat connection. Verified the hosting project's GitHub org/repo and main production branch via the authenticated API.
+- Test added: hosting-project metadata verification and subsequent Git-push auto-deployment verification.
+- Status: Fixed.
+- Before screenshot: `screenshots/BUG-26-before-already-connected.png`.
+- After screenshot: `screenshots/BUG-26-after-fixed.png`.
+
+## BUG-27 — Policy test panel ignored edited numeric amounts
+- Date/time: 2026-11-16T05:47:59Z.
+- Where: Finance “Test this policy” panel in the currently served production build.
+- Steps: a late source review identified a possible numeric-binding issue; a real-browser regression was run against the pre-rebuild artifact. Entered 999999 INR as the sample first-line amount.
+- Expected: the sample immediately reports the claim-cap Block, without changing the stored claim.
+- Actual: no claim-cap finding appeared; browser assertion timed out waiting for `Claim exceeds`. The before screenshot shows the entered amount and the stale findings.
+- Severity: Medium (policy preview; the pure checker and real submission checks were unaffected).
+- Root cause: Svelte number-input binding supplied a number to a string-only decimal parser; the panel's catch path silently retained the original amount.
+- Fix: explicitly convert the numeric sample value to a string before integer-paise parsing.
+- Test added: real-click policy-panel regression verifies the new cap finding and confirms the original saved claim amount remains 240000 paise.
+- Status: Fixed.
+- Before screenshot: `screenshots/failure-2026-11-16T05-47-59-889Z.png`.
+- After screenshot: `screenshots/BUG-27-after-fixed.png`; the rebuilt UI regression passed and preserved the original saved amount.
+
+## BUG-28 — Malformed source-edit request rejected by the tool schema
+- Date/time: 2026-11-16T05:58Z; logged immediately during final CSS cleanup (seconds not retained).
+- Where: Designer str_replace tool, toast touch-target adjustment.
+- Steps: attempted to submit the final CSS replacement.
+- Expected: a string replacement is validated and applied atomically.
+- Actual: `invalid arguments at /new_string: -1 is not of type "string"`.
+- Severity: Low.
+- Root cause: the agent emitted a malformed tool argument rather than a string. This was an agent invocation error, not an application failure.
+- Fix: issued the corrected, version-checked string replacement. The invalid invocation changed no file.
+- Test added: source verification plus the strict stylesheet build; the intended toast control now has a 44px minimum target.
+- Status: Fixed.
+- Before screenshot: `screenshots/BUG-28-before-edit-request.png` is a message transcription; screenshot needed from the user only if the original tool UI is required.
+- After screenshot: `screenshots/BUG-28-after-fixed.png`.

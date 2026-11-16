@@ -1,6 +1,8 @@
 {
-  "time": "2026-11-16T05:19:16.553Z",
+  "time": "2026-11-16T05:42:23.245Z",
   "base": "http://127.0.0.1:4173",
+  "initialViewport": 1440,
+  "initialTheme": "light",
   "passed": 70,
   "checks": [
     "fresh browser contains exactly 30 fictional claims",

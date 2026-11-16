@@ -1,0 +1,7 @@
+BUG-28 · exact Designer tool error
+2026-11-16T05:58Z
+
+invalid arguments at /new_string: -1 is not of type "string"
+
+The malformed request changed no file. A corrected version-checked string replacement was then applied successfully.
+Original tool UI screenshot is needed from the user if required; this is an exact message transcription.

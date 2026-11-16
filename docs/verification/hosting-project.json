@@ -1,0 +1,14 @@
+{
+  "name": "claimease",
+  "framework": "sveltekit-1",
+  "buildCommand": "npm run build",
+  "outputDirectory": "build",
+  "git": {
+    "type": "github",
+    "org": "DIVYAPRIYADHARSHINI-GIT",
+    "repo": "claimease",
+    "productionBranch": "main"
+  },
+  "environmentVariableNames": [],
+  "productionReady": null
+}

@@ -2,11 +2,11 @@ import {describe,it,expect} from 'vitest';
 import fc from 'fast-check';
 import {decimal,multiply,mileage,perDiem,foreign,total,money,nextNumber,lineAmount,integer,sum} from '../src/lib/money';
 import {checkClaim,validDate} from '../src/lib/policy';
-import {transition,decideLine,canSee,inTeam,guard,routeAllowed,sessionValid} from '../src/lib/workflow';
+import {transition,decideLine,canSee,guard,sessionValid} from '../src/lib/workflow';
 import {hashPassword,newSalt,passwordRules,failedAttempt,locked} from '../src/lib/auth';
 import {validateBackup,validateState,migrate,validatePolicy} from '../src/lib/backup';
-import {csv,csvCell,claimPDF,exportCSV} from '../src/lib/exports';
-import {categories,statuses,ruleKeys,type Status,type Role,type Claim} from '../src/lib/types';
+import {csv,csvCell,claimPDF,exportCSV,lineContext} from '../src/lib/exports';
+import {statuses,ruleKeys,type Status,type Role,type Claim} from '../src/lib/types';
 import {policy,claim,line,employee,manager,secondManager,finance,users,state,today} from './fixtures';
 import {PDFDocument} from 'pdf-lib';
 describe('integer money arithmetic',()=>{
@@ -21,9 +21,9 @@ describe('integer money arithmetic',()=>{
  it('rejects zero divisor',()=>expect(()=>multiply(1,1,0)).toThrow());
  it('tax-inclusive totals never add tax twice',()=>expect(total([line({amount:10000,tax:500})])).toBe(10000));
  it('approved total excludes rejected lines',()=>expect(total([line(),line({id:'l2',amount:30000,decision:'rejected'})],true)).toBe(10000));
- it('mileage amount derived not stale',()=>expect(lineAmount(line({kind:'mileage',quantity:1234,rate:1000,amount:999}))).toBe(1234));
- it('per diem amount derived',()=>expect(lineAmount(line({kind:'perdiem',quantity:2,rate:120000}))).toBe(240000));
- it('FX amount derived',()=>expect(lineAmount(line({currency:'USD',foreignAmount:100,fxRate:83000000}))).toBe(8300));
+ it('mileage amount derived not stale',()=>{const l=line({kind:'mileage',quantity:1234,rate:1000,amount:999});expect(lineAmount(l)).toBe(1234);expect(lineContext(l)).toBe('1.234 km x INR 10.00 per km');});
+ it('per diem amount derived',()=>{const l=line({kind:'perdiem',quantity:2,rate:120000});expect(lineAmount(l)).toBe(240000);expect(lineContext(l)).toBe('2 travel days x INR 1200.00 per day');});
+ it('FX amount derived',()=>{const l=line({currency:'USD',foreignAmount:100,fxRate:83000000});expect(lineAmount(l)).toBe(8300);expect(lineContext(l)).toBe('USD 1.00 x 83.000000 INR per unit (manual rate)');});
  it('sum overflow rejected',()=>expect(()=>sum([Number.MAX_SAFE_INTEGER,1])).toThrow());
  it('property: rational multiplication agrees with BigInt oracle',()=>fc.assert(fc.property(fc.integer({min:0,max:1e8}),fc.integer({min:0,max:1e6}),fc.integer({min:1,max:1e6}),(a,b,d)=>{expect(multiply(a,b,d)).toBe(Number((BigInt(a)*BigInt(b)+BigInt(Math.floor(d/2)))/BigInt(d)));}),{numRuns:500}));
  it('property: splitting inclusive taxes never changes claim total',()=>fc.assert(fc.property(fc.array(fc.integer({min:0,max:1e7}),{maxLength:50}),amounts=>{expect(total(amounts.map((amount,i)=>line({id:String(i),amount,tax:Math.floor(amount/20)})))).toBe(amounts.reduce((a,b)=>a+b,0));}),{numRuns:300}));
@@ -128,7 +128,7 @@ describe('CSV and browser PDF',()=>{
  it('CSV quotes and commas escaped',()=>expect(csv([['a,b','x"y']])).toBe('\uFEFF"a,b","x""y"'));
  it('CSV preserves Unicode',()=>expect(csv([['தமிழ்','हिंदी']])).toContain('தமிழ்'));
  it('claims CSV includes policy findings',()=>expect(exportCSV('claims',state(),today)).toContain('Policy findings'));
- it('accounting includes GL code and cost centre',()=>{const s=state();s.claims[0].status='Paid';expect(exportCSV('accounting',s,today)).toContain('6100');expect(exportCSV('accounting',s,today)).toContain('ENG-101');});
+ it('accounting includes GL code and cost centre',()=>{const s=state();s.claims[0].status='Paid';expect(exportCSV('accounting',s,today)).toContain('6100');expect(exportCSV('accounting',s,today)).toContain('ENG-101');expect(exportCSV('accounting',s,today)).toContain('approved with claim');expect(exportCSV('lines',s,today)).toContain('Source calculation');});
  it('accounting excludes rejected lines',()=>{const s=state();s.claims[0].status='Paid';s.claims[0].lines[0].decision='rejected';expect(exportCSV('accounting',s,today).split('\r\n')).toHaveLength(1);});
  it('PDF is a real document with paginated long claim',async()=>{const c=claim({lines:Array.from({length:40},(_,i)=>line({id:String(i),description:'Business expense for fictional client visit '+i}))});const bytes=await claimPDF(c,state(),policy(),[],async()=>undefined);expect(new TextDecoder().decode(bytes.slice(0,5))).toBe('%PDF-');expect((await PDFDocument.load(bytes)).getPageCount()).toBeGreaterThan(2);});
 });

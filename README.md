@@ -4,7 +4,7 @@
 
 ## Live demo
 
-Deployment has not yet been completed. The verified public production domain and repository link will be added here after deployment checks. This is not a production office service.
+Public production domain assigned by Vercel: **https://claimease-three.vercel.app**. Deployment/live verification is in progress; this paragraph will be updated after verification. Repository: **https://github.com/DIVYAPRIYADHARSHINI-GIT/claimease**. This is not a production office service.
 
 ## Important privacy and authentication limits
 
@@ -109,4 +109,6 @@ Actual execution results are saved under `docs/verification/`; screenshots under
 - No email, live FX service, bank transfer or accounting connection.
 - Supported receipt formats: JPEG, PNG and WebP. PDFs are exported as documents, not accepted as receipt uploads.
 - PDF text uses standard Latin fonts and ASCII punctuation fallbacks; complex-script text is not fully supported. Original receipt images are retained.
-- Full dependency audit currently reports low-severity development-tool advisories; the production-only audit reports zero vulnerabilities. See BUG-03 for the complete history rather than treating a clean production audit as a clean development audit.
+- Full dependency audit currently reports four low-severity development-tool advisories; the production-only audit reports zero vulnerabilities. See BUG-03 for the complete history rather than treating a clean production audit as a clean development audit.
+- Deployment-workflow deviation: Vercel CLI 64.2.0 automatically created a temporary `VERCEL_OIDC_TOKEN` in `.env.local` during linking. The file was immediately deleted without displaying, copying, using or committing the value. The application requires no environment variables, and the hosting project has none configured. See BUG-25; this incident is not hidden as a storage-architecture change.
+- Vercel assigned `claimease-three.vercel.app`, rather than the unsuffixed domain requested as an example. Some early setup-error screenshots were rendered later from the exact logged output; BUG-02 still needs an original platform screenshot from the user.

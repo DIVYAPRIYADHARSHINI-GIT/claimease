@@ -12,3 +12,5 @@ coverage/
 docs/verification/backup-private.json
 docs/verification/*-private.json
 docs/verification/*.csv
+.vercel
+.env*

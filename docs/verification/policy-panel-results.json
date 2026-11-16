@@ -1,0 +1,7 @@
+{
+  "time": "2026-11-16T06:00:24.426Z",
+  "base": "http://127.0.0.1:4173",
+  "passed": 1,
+  "check": "Edited numeric policy sample creates cap finding without changing stored claim",
+  "consoleErrors": []
+}

@@ -1,0 +1,7 @@
+{
+  "time": "2026-11-16T05:48:00.048Z",
+  "label": "policy test panel edited numeric amount",
+  "url": "http://127.0.0.1:4173/policy",
+  "error": "TimeoutError: locator.waitFor: Timeout 6000ms exceeded.\nCall log:\n  - waiting for locator('.policy-test').getByText(/^Claim exceeds/) to be visible\n",
+  "screenshot": "screenshots/failure-2026-11-16T05-47-59-889Z.png"
+}
