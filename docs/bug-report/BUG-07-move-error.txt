@@ -1,0 +1,11 @@
+BUG-07 — route rename not applied by edit tool
+2026-11-16T04:52:38Z
+
+The edit_file response reported the patch applied, but glob still listed:
+claimease/src/routes/[[...path]]/+page.svelte
+and did not list the target [...path]/+page.svelte.
+
+The subsequent directory removal failed:
+rmdir: src/routes/[[...path]]: Directory not empty
+
+The repeated typecheck reproduced BUG-06: route_optional_rest.

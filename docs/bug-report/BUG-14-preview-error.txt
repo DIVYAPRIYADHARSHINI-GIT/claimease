@@ -1,0 +1,13 @@
+BUG-14 — production preview process crashed during rebuild
+2026-11-16T04:58:29Z (server crash; browser failure captured 04:58:36Z)
+
+node:events:505
+    throw er; // Unhandled 'error' event
+    ^
+Error: ENOENT: no such file or directory, open '/Users/softage/Designer Projects/starter/claimease/.svelte-kit/output/client/_app/immutable/entry/app.D_ul3vVV.js'
+Emitted 'error' event on ReadStream instance
+
+Browser follow-up:
+production smoke: TimeoutError: locator.waitFor: Timeout 6000ms exceeded.
+Call log:
+  - waiting for getByRole('heading', { name: 'Welcome to your workspace' }) to be visible

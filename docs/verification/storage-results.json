@@ -1,0 +1,17 @@
+{
+  "time": "2026-11-16T05:19:23.619Z",
+  "passed": 8,
+  "checks": [
+    "empty storage seeds fictional data and local receipt images",
+    "localStorage disabled yields a clear non-crashing recovery page",
+    "corrupted JSON is preserved with download recovery option",
+    "full storage at startup preserves existing claims",
+    "quota error while saving retains the unsaved editor and original state",
+    "500 claims render and filter without freezing",
+    "inactivity warning appears before automatic sign-out",
+    "sample reset and Start fresh retain audit and retire numbers"
+  ],
+  "metrics": {
+    "load500Milliseconds": 283
+  }
+}

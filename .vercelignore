@@ -1,0 +1,10 @@
+.git/
+.env*
+.vercel/
+node_modules/
+.svelte-kit/
+build/
+docs/
+tests/
+tools/
+README.md

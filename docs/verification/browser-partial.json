@@ -1,0 +1,6 @@
+{
+  "step": "dark theme persists over direct reload",
+  "passed": 19,
+  "errors": [],
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nnull !== 'dark'\n"
+}

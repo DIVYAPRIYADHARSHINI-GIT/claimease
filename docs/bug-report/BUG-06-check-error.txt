@@ -1,0 +1,17 @@
+
+> claimease@1.0.0 check
+> svelte-kit sync && svelte-check --tsconfig ./tsconfig.json
+
+> route_optional_rest
+Invalid route `/[[...path]]` — a rest route segment is always optional, remove the outer square brackets
+https://svelte.dev/e/kit/route_optional_rest
+Invalid route `/[[...path]]` — a rest route segment is always optional, remove the outer square brackets
+https://svelte.dev/e/kit/route_optional_rest
+    at walk (file:///Users/softage/Designer%20Projects/starter/claimease/node_modules/@sveltejs/kit/src/core/sync/create_manifest_data/index.js:182:7)
+    at walk (file:///Users/softage/Designer%20Projects/starter/claimease/node_modules/@sveltejs/kit/src/core/sync/create_manifest_data/index.js:361:6)
+    at create_routes_and_nodes (file:///Users/softage/Designer%20Projects/starter/claimease/node_modules/@sveltejs/kit/src/core/sync/create_manifest_data/index.js:366:3)
+    at create_manifest_data (file:///Users/softage/Designer%20Projects/starter/claimease/node_modules/@sveltejs/kit/src/core/sync/create_manifest_data/index.js:38:28)
+    at BasicMinimalPluginContext.handler (file:///Users/softage/Designer%20Projects/starter/claimease/node_modules/@sveltejs/kit/src/exports/vite/build/index.js:140:21)
+    at runConfigHook (file:///Users/softage/Designer%20Projects/starter/claimease/node_modules/vite/dist/node/chunks/node.js:38288:42)
+    at async Module.resolveConfig (file:///Users/softage/Designer%20Projects/starter/claimease/node_modules/vite/dist/node/chunks/node.js:37695:11)
+    at async file:///Users/softage/Designer%20Projects/starter/claimease/node_modules/@sveltejs/kit/src/cli.js:102:23

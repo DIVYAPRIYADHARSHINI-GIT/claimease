@@ -1,0 +1,89 @@
+
+> claimease@1.0.0 test
+> vitest run
+
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.0.5 [39m[90m/Users/softage/Designer Projects/starter/claimease[39m
+
+ [31m❯[39m tests/regressions.test.ts [2m([22m[2m11 tests[22m[2m | [22m[31m2 failed[39m[2m)[22m[32m 26[2mms[22m[39m
+   [32m✓[39m BUG-01 isolated Git repository exists[32m 17[2mms[22m[39m
+   [32m✓[39m BUG-02 project implementation checklist exists[32m 0[2mms[22m[39m
+   [32m✓[39m BUG-05 no removed SvelteKit configuration[32m 0[2mms[22m[39m
+   [32m✓[39m BUG-06/07 catch-all route uses valid syntax[32m 0[2mms[22m[39m
+   [32m✓[39m BUG-08 current TypeScript base[32m 0[2mms[22m[39m
+   [32m✓[39m BUG-12 no deprecated library alias[32m 0[2mms[22m[39m
+   [32m✓[39m BUG-15 script CSP generated with hashes, not unsafe-inline[32m 0[2mms[22m[39m
+   [32m✓[39m BUG-19 normaliser covers receipt separator[32m 1[2mms[22m[39m
+   [32m✓[39m BUG-21 recorded batch scroll region keyboard accessible[32m 0[2mms[22m[39m
+[31m   [31m×[31m backup rejects a mismatched payment-batch total[39m[32m 5[2mms[22m[39m
+[31m   [31m×[31m backup rejects malformed lock/session data[39m[32m 0[2mms[22m[39m
+ [31m❯[39m tests/store.test.ts [2m([22m[2m26 tests[22m[2m | [22m[31m1 failed[39m[2m)[22m[32m 68[2mms[22m[39m
+   [31m❯[39m ClaimStore enforces workflow and storage [2m(26)[22m
+     [32m✓[39m employee view never includes others claims[32m 3[2mms[22m[39m
+     [32m✓[39m public accounts never expose hashes[32m 0[2mms[22m[39m
+     [32m✓[39m employee cannot export full browser backup[32m 1[2mms[22m[39m
+     [32m✓[39m employee cannot import full browser backup[32m 0[2mms[22m[39m
+     [32m✓[39m saving draft preserves immutable number/owner[32m 2[2mms[22m[39m
+     [32m✓[39m deleted number never reused and audit kept[32m 1[2mms[22m[39m
+     [32m✓[39m blocks stop submission[32m 1[2mms[22m[39m
+     [32m✓[39m warnings need justification[32m 0[2mms[22m[39m
+     [32m✓[39m warn justification allows submission and snapshots policy[32m 1[2mms[22m[39m
+     [32m✓[39m policy edit does not rebind old submission[32m 0[2mms[22m[39m
+     [32m✓[39m employee cannot edit policy[32m 0[2mms[22m[39m
+     [32m✓[39m finance cannot create employee draft[32m 0[2mms[22m[39m
+     [32m✓[39m no individual Paid transition bypasses batch[32m 0[2mms[22m[39m
+     [32m✓[39m batch validates sum before mutation[32m 1[2mms[22m[39m
+     [32m✓[39m batch marks paid atomically[32m 1[2mms[22m[39m
+     [32m✓[39m cannot pay a claim twice[32m 0[2mms[22m[39m
+     [32m✓[39m duplicate ids in batch rejected[32m 0[2mms[22m[39m
+     [32m✓[39m quota failure preserves saved data[32m 0[2mms[22m[39m
+     [32m✓[39m disabled storage gives clear recovery error[32m 0[2mms[22m[39m
+     [32m✓[39m corrupted data stays untouched[32m 0[2mms[22m[39m
+     [32m✓[39m other tab revision refuses lost update[32m 0[2mms[22m[39m
+     [32m✓[39m failed authentication uses generic message[32m 19[2mms[22m[39m
+     [32m✓[39m valid browser PBKDF2 sign-in[32m 30[2mms[22m[39m
+     [32m✓[39m sign-out clears session[32m 0[2mms[22m[39m
+[31m     [31m×[31m cross-browser import accepts an identical policy with a different creation timestamp[39m[32m 4[2mms[22m[39m
+     [32m✓[39m expired sessions cannot mutate[32m 0[2mms[22m[39m
+ [32m✓[39m tests/core.test.ts [2m([22m[2m421 tests[22m[2m)[22m[32m 191[2mms[22m[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 3 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[41m[1m FAIL [22m[49m tests/regressions.test.ts[2m > [22mbackup rejects a mismatched payment-batch total
+[31m[1mAssertionError[22m: expected [Function] to throw an error[39m
+
+[32m- Expected:[39m
+null
+
+[31m+ Received:[39m
+undefined
+
+[36m [2m❯[22m tests/regressions.test.ts:[2m15:267[22m[39m
+
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m tests/regressions.test.ts[2m > [22mbackup rejects malformed lock/session data
+[31m[1mAssertionError[22m: expected [Function] to throw an error[39m
+[36m [2m❯[22m tests/regressions.test.ts:[2m16:144[22m[39m
+
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m tests/store.test.ts[2m > [22mClaimStore enforces workflow and storage[2m > [22mcross-browser import accepts an identical policy with a different creation timestamp
+[31m[1mAssertionError[22m: promise rejected "Error: Policy v1 conflicts with this brow…" instead of resolving[39m
+[36m [2m❯[22m tests/store.test.ts:[2m35:380[22m[39m
+
+
+[31m[1mCaused by: Error[22m: Policy v1 conflicts with this browser. Import into an empty browser instead; nothing was overwritten.[39m
+[36m [2m❯[22m BrowserClaimStore.importBackup src/lib/store.ts:[2m110:166[22m[39m
+[90m [2m❯[22m tests/store.test.ts:[2m35:362[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯[22m[39m
+
+
+[2m Test Files [22m [1m[31m2 failed[39m[22m[2m | [22m[1m[32m1 passed[39m[22m[90m (3)[39m
+[2m      Tests [22m [1m[31m3 failed[39m[22m[2m | [22m[1m[32m455 passed[39m[22m[90m (458)[39m
+[2m   Start at [22m 10:42:54
+[2m   Duration [22m 510ms[2m (tests 44%, import 28%, transform 26%, worker 1%)[22m
+

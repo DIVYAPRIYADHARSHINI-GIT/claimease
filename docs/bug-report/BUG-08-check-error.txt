@@ -1,0 +1,27 @@
+
+> claimease@1.0.0 check
+> svelte-kit sync && svelte-check --tsconfig ./tsconfig.json
+
+tsconfig_extends_missing
+`tsconfig.json` should extend SvelteKit's built-in configuration:
+{
+  "extends": "$app/tsconfig",
+  "include": [
+    "src",
+    "test",
+    "*"
+  ],
+  "exclude": [
+    "src/service-worker"
+  ]
+}
+https://svelte.dev/e/kit/tsconfig_extends_missing
+Loading svelte-check in workspace: /Users/softage/Designer Projects/starter/claimease
+Getting Svelte diagnostics...
+
+/Users/softage/Designer Projects/starter/claimease/tsconfig.json:1:1
+Error: Cannot read file '/Users/softage/Designer Projects/starter/claimease/.svelte-kit/tsconfig.json'. 
+
+
+====================================
+svelte-check found 1 error and 0 warnings in 1 file

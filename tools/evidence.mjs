@@ -1,0 +1,13 @@
+import {chromium} from 'playwright';
+import {mkdir,readFile} from 'node:fs/promises';
+const [name,file]=process.argv.slice(2);
+const text=await readFile(file,'utf8');
+if(/(?:gh[pousr]_[A-Za-z0-9]{20}|Bearer\s+[A-Za-z0-9._-]{20}|vercel_[A-Za-z0-9]{20})/.test(text))throw new Error('Secret-like content blocked.');
+await mkdir('docs/bug-report/screenshots',{recursive:true});
+const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
+const page=await browser.newPage({viewport:{width:1280,height:800}});
+await page.setContent('<html lang="en"><head><title>ClaimEase verification evidence</title><style>body{margin:48px;background:#f6f7fa;color:#101828;font:18px/1.6 monospace}h1{font:600 28px Arial}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:28px;border:1px solid #d0d5dd;background:white}</style></head><body><h1>ClaimEase · verification evidence</h1><pre></pre></body></html>');
+await page.locator('pre').textContent();
+await page.locator('pre').evaluate((e,t)=>e.textContent=t,text);
+await page.screenshot({path:`docs/bug-report/screenshots/${name}.png`,fullPage:true});
+await browser.close();

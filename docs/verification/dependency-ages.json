@@ -1,0 +1,75 @@
+{
+  "checkedAt": "2026-11-16T05:08:54.226Z",
+  "results": [
+    {
+      "name": "@fontsource-variable/inter",
+      "version": "5.2.8",
+      "published": "2025-09-17T09:18:20.284Z"
+    },
+    {
+      "name": "pdf-lib",
+      "version": "1.17.1",
+      "published": "2021-11-06T22:29:49.065Z"
+    },
+    {
+      "name": "@sveltejs/adapter-static",
+      "version": "4.0.1",
+      "published": "2026-10-29T23:53:05.270Z"
+    },
+    {
+      "name": "@sveltejs/kit",
+      "version": "3.1.1",
+      "published": "2026-10-29T23:48:42.310Z"
+    },
+    {
+      "name": "@sveltejs/vite-plugin-svelte",
+      "version": "7.3.1",
+      "published": "2026-09-23T10:38:42.922Z"
+    },
+    {
+      "name": "@types/node",
+      "version": "22.15.30",
+      "published": "2025-06-05T18:56:37.682Z"
+    },
+    {
+      "name": "axe-core",
+      "version": "4.10.3",
+      "published": "2025-03-05T16:06:34.435Z"
+    },
+    {
+      "name": "fast-check",
+      "version": "4.3.0",
+      "published": "2025-08-29T18:00:51.177Z"
+    },
+    {
+      "name": "playwright",
+      "version": "1.56.1",
+      "published": "2025-10-17T00:51:31.864Z"
+    },
+    {
+      "name": "svelte",
+      "version": "5.57.3",
+      "published": "2026-10-26T18:16:20.865Z"
+    },
+    {
+      "name": "svelte-check",
+      "version": "4.7.7",
+      "published": "2026-10-16T13:24:22.381Z"
+    },
+    {
+      "name": "typescript",
+      "version": "6.0.3",
+      "published": "2026-04-16T23:38:27.905Z"
+    },
+    {
+      "name": "vite",
+      "version": "8.3.5",
+      "published": "2026-10-21T06:38:54.907Z"
+    },
+    {
+      "name": "vitest",
+      "version": "5.0.5",
+      "published": "2026-10-15T14:29:01.396Z"
+    }
+  ]
+}

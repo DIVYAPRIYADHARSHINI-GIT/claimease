@@ -1,0 +1,7 @@
+{
+  "time": "2026-11-16T05:03:41.913Z",
+  "label": "finance balanced batch marks claims Paid",
+  "url": "http://127.0.0.1:4173/batches",
+  "error": "TimeoutError: locator.waitFor: Timeout 6000ms exceeded.\nCall log:\n  - waiting for getByRole('cell', { name: 'DEMO-REGIONAL-001' }) to be visible\n",
+  "screenshot": "screenshots/failure-2026-11-16T05-03-41-773Z.png"
+}

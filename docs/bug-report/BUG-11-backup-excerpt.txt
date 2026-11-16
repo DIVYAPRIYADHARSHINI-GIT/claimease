@@ -1,0 +1,12 @@
+BUG-11 — actual permission-test failure excerpt, 2026-11-16T04:54:52Z
+
+FAIL tests/store.test.ts > ClaimStore enforces workflow and storage > employee cannot export full browser backup
+AssertionError: promise resolved instead of rejecting
+
+FAIL tests/store.test.ts > ClaimStore enforces workflow and storage > employee cannot import full browser backup
+AssertionError: promise resolved "'Imported 0 claims. Skipped 1 existing…'" instead of rejecting
+
+Received:
+"Imported 0 claims. Skipped 1 existing claim identifiers; no existing claim or audit entry was overwritten."
+
+The returned backup payload is omitted from this screenshot to avoid exposing authentication data. Test fixtures were fictional.

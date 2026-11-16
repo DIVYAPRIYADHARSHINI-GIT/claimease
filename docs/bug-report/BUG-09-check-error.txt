@@ -1,0 +1,81 @@
+
+> claimease@1.0.0 check
+> svelte-kit sync && svelte-check --tsconfig ./tsconfig.json
+
+Loading svelte-check in workspace: /Users/softage/Designer Projects/starter/claimease
+Getting Svelte diagnostics...
+
+/Users/softage/Designer Projects/starter/claimease/src/lib/sample.ts:31:14
+Error: Type 'undefined' is not assignable to type 'number'. 
+    if(i===0)line.date=new Date(now.getTime()+86400000).toISOString().slice(0,10);
+    if(i===5)line.tax=undefined;
+    if(i===10){line.currency='USD';line.foreignAmount=2000;line.fxRate=83500000;line.amount=167000;}
+
+/Users/softage/Designer Projects/starter/claimease/src/lib/backup.ts:11:36
+Error: 'p' is of type 'unknown'. 
+  if(!object(p)||!number(p.version)||!p.version||!object(p.rules)||!object(p.dailyLimits)||!object(p.monthlyLimits)||!object(p.glCodes)||!object(p.allowedDepartments)||!object(p.allowedGrades)||!array(p.holidays)||!array(p.receiptCategories)||typeof p.secondLevel!=='boolean'||![p.mileageRate,p.perDiem,p.secondLevelThreshold].every(number))fail('Invalid policy structure.');
+  for(const k of ruleKeys){const r=p.rules[k];if(!object(r)||typeof r.enabled!=='boolean'||!number(r.value)||!text(r.explanation))fail(`Invalid policy rule: ${k}.`);}
+  for(const c of categories)if(!number(p.dailyLimits[c])||!number(p.monthlyLimits[c])||!text(p.glCodes[c],40))fail(`Invalid category settings: ${c}.`);
+
+/Users/softage/Designer Projects/starter/claimease/src/lib/backup.ts:12:40
+Error: 'p' is of type 'unknown'. 
+  for(const k of ruleKeys){const r=p.rules[k];if(!object(r)||typeof r.enabled!=='boolean'||!number(r.value)||!text(r.explanation))fail(`Invalid policy rule: ${k}.`);}
+  for(const c of categories)if(!number(p.dailyLimits[c])||!number(p.monthlyLimits[c])||!text(p.glCodes[c],40))fail(`Invalid category settings: ${c}.`);
+  for(const a of [...Object.values(p.allowedDepartments),...Object.values(p.allowedGrades),p.receiptCategories])if(!array(a)||!a.every(c=>categories.includes(c as never)))fail('Unknown category in policy.');
+
+/Users/softage/Designer Projects/starter/claimease/src/lib/backup.ts:12:67
+Error: 'p' is of type 'unknown'. 
+  for(const k of ruleKeys){const r=p.rules[k];if(!object(r)||typeof r.enabled!=='boolean'||!number(r.value)||!text(r.explanation))fail(`Invalid policy rule: ${k}.`);}
+  for(const c of categories)if(!number(p.dailyLimits[c])||!number(p.monthlyLimits[c])||!text(p.glCodes[c],40))fail(`Invalid category settings: ${c}.`);
+  for(const a of [...Object.values(p.allowedDepartments),...Object.values(p.allowedGrades),p.receiptCategories])if(!array(a)||!a.every(c=>categories.includes(c as never)))fail('Unknown category in policy.');
+
+/Users/softage/Designer Projects/starter/claimease/src/lib/backup.ts:12:94
+Error: 'p' is of type 'unknown'. 
+  for(const k of ruleKeys){const r=p.rules[k];if(!object(r)||typeof r.enabled!=='boolean'||!number(r.value)||!text(r.explanation))fail(`Invalid policy rule: ${k}.`);}
+  for(const c of categories)if(!number(p.dailyLimits[c])||!number(p.monthlyLimits[c])||!text(p.glCodes[c],40))fail(`Invalid category settings: ${c}.`);
+  for(const a of [...Object.values(p.allowedDepartments),...Object.values(p.allowedGrades),p.receiptCategories])if(!array(a)||!a.every(c=>categories.includes(c as never)))fail('Unknown category in policy.');
+
+/Users/softage/Designer Projects/starter/claimease/src/lib/backup.ts:13:36
+Error: 'p' is of type 'unknown'. 
+  for(const c of categories)if(!number(p.dailyLimits[c])||!number(p.monthlyLimits[c])||!text(p.glCodes[c],40))fail(`Invalid category settings: ${c}.`);
+  for(const a of [...Object.values(p.allowedDepartments),...Object.values(p.allowedGrades),p.receiptCategories])if(!array(a)||!a.every(c=>categories.includes(c as never)))fail('Unknown category in policy.');
+  if(!p.holidays.every(d=>typeof d==='string'&&validDate(d)))fail('Invalid holiday date.');
+
+/Users/softage/Designer Projects/starter/claimease/src/lib/backup.ts:13:75
+Error: 'p' is of type 'unknown'. 
+  for(const c of categories)if(!number(p.dailyLimits[c])||!number(p.monthlyLimits[c])||!text(p.glCodes[c],40))fail(`Invalid category settings: ${c}.`);
+  for(const a of [...Object.values(p.allowedDepartments),...Object.values(p.allowedGrades),p.receiptCategories])if(!array(a)||!a.every(c=>categories.includes(c as never)))fail('Unknown category in policy.');
+  if(!p.holidays.every(d=>typeof d==='string'&&validDate(d)))fail('Invalid holiday date.');
+
+/Users/softage/Designer Projects/starter/claimease/src/lib/backup.ts:13:92
+Error: 'p' is of type 'unknown'. 
+  for(const c of categories)if(!number(p.dailyLimits[c])||!number(p.monthlyLimits[c])||!text(p.glCodes[c],40))fail(`Invalid category settings: ${c}.`);
+  for(const a of [...Object.values(p.allowedDepartments),...Object.values(p.allowedGrades),p.receiptCategories])if(!array(a)||!a.every(c=>categories.includes(c as never)))fail('Unknown category in policy.');
+  if(!p.holidays.every(d=>typeof d==='string'&&validDate(d)))fail('Invalid holiday date.');
+
+/Users/softage/Designer Projects/starter/claimease/src/lib/backup.ts:14:7
+Error: 'p' is of type 'unknown'. 
+  for(const a of [...Object.values(p.allowedDepartments),...Object.values(p.allowedGrades),p.receiptCategories])if(!array(a)||!a.every(c=>categories.includes(c as never)))fail('Unknown category in policy.');
+  if(!p.holidays.every(d=>typeof d==='string'&&validDate(d)))fail('Invalid holiday date.');
+}
+
+/Users/softage/Designer Projects/starter/claimease/src/lib/backup.ts:14:24
+Error: Parameter 'd' implicitly has an 'any' type. 
+  for(const a of [...Object.values(p.allowedDepartments),...Object.values(p.allowedGrades),p.receiptCategories])if(!array(a)||!a.every(c=>categories.includes(c as never)))fail('Unknown category in policy.');
+  if(!p.holidays.every(d=>typeof d==='string'&&validDate(d)))fail('Invalid holiday date.');
+}
+
+/Users/softage/Designer Projects/starter/claimease/src/lib/backup.ts:45:21
+Error: 'b' is of type 'unknown'. 
+  if(!object(b)||b.format!=='ClaimEase'||b.version!==2||!text(b.exportedAt)||!object(b.data)||!array(b.receipts,10000))fail('Choose a ClaimEase version 2 JSON backup.');
+  validateState({...b.data,session:null,locks:{}});
+  const backup=b as unknown as Backup;
+
+/Users/softage/Designer Projects/starter/claimease/src/routes/+layout.svelte:2:9
+Error: Cannot find module or type declarations for side-effect import of '@fontsource-variable/inter'. (ts)
+<script lang="ts">
+ import '@fontsource-variable/inter';import '../lib/styles.css';import {onMount} from 'svelte';import {page} from '$app/state';import {goto} from '$app/navigation';import {app,refresh,run,usage} from '$lib/app.svelte';import {claimStore} from '$lib/store';import {guard} from '$lib/workflow';import Icon from '$lib/components/Icon.svelte';import {download} from '$lib/exports';
+ let {children}=$props();let now=$state(Date.now());let bootError=$state('');
+
+====================================
+svelte-check found 12 errors and 0 warnings in 3 files

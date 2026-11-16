@@ -1,0 +1,6 @@
+BUG-15 — actual Chrome console error, 2026-11-16T05:00:20Z
+
+Executing inline script violates the following Content Security Policy directive 'script-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-oivb52Td2BtP8mo5iqJsJg4jWjMa3/RNE/mobhUUStA='), or a nonce ('nonce-...') is required to enable inline execution. The action has been blocked.
+
+Result: empty document body; browser smoke timed out waiting for sign-in.
+The SHA-256 text above is a public script integrity hash, not a token or secret.

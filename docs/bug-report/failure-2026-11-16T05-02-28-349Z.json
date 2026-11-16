@@ -1,0 +1,7 @@
+{
+  "time": "2026-11-16T05:02:28.431Z",
+  "label": "employee sees only own claims",
+  "url": "http://127.0.0.1:4173/claims",
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n0 !== 6\n",
+  "screenshot": "screenshots/failure-2026-11-16T05-02-28-349Z.png"
+}

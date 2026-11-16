@@ -1,0 +1,3688 @@
+{
+  "time": "2026-11-16T05:09:45.719Z",
+  "base": "http://127.0.0.1:4173",
+  "audits": 184,
+  "issues": 48,
+  "results": [
+    {
+      "name": "signin-light-1440",
+      "url": "http://127.0.0.1:4173/signin",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [
+        {
+          "tag": "BUTTON",
+          "text": "Show password",
+          "width": 42,
+          "height": 42
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "name": "signin-light-1024",
+      "url": "http://127.0.0.1:4173/signin",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [
+        {
+          "tag": "BUTTON",
+          "text": "Show password",
+          "width": 42,
+          "height": 42
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "name": "signin-light-768",
+      "url": "http://127.0.0.1:4173/signin",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [
+        {
+          "tag": "BUTTON",
+          "text": "Show password",
+          "width": 42,
+          "height": 42
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "name": "signin-light-390",
+      "url": "http://127.0.0.1:4173/signin",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [
+        {
+          "tag": "BUTTON",
+          "text": "Show password",
+          "width": 42,
+          "height": 42
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "name": "signin-dark-1440",
+      "url": "http://127.0.0.1:4173/signin",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [
+        {
+          "tag": "BUTTON",
+          "text": "Show password",
+          "width": 42,
+          "height": 42
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "name": "signin-dark-1024",
+      "url": "http://127.0.0.1:4173/signin",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [
+        {
+          "tag": "BUTTON",
+          "text": "Show password",
+          "width": 42,
+          "height": 42
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "name": "signin-dark-768",
+      "url": "http://127.0.0.1:4173/signin",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [
+        {
+          "tag": "BUTTON",
+          "text": "Show password",
+          "width": 42,
+          "height": 42
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "name": "signin-dark-390",
+      "url": "http://127.0.0.1:4173/signin",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [
+        {
+          "tag": "BUTTON",
+          "text": "Show password",
+          "width": 42,
+          "height": 42
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-overview-light-1440",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-overview-light-1024",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-overview-light-768",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-overview-light-390",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "Active and completed claims · INR",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Expense date · Last six months",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Your latest expenses and where they stand.",
+          "size": "10px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-claims-light-1440",
+      "url": "http://127.0.0.1:4173/claims",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-claims-light-1024",
+      "url": "http://127.0.0.1:4173/claims",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-claims-light-768",
+      "url": "http://127.0.0.1:4173/claims",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-claims-light-390",
+      "url": "http://127.0.0.1:4173/claims",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-claim-editor-light-1440",
+      "url": "http://127.0.0.1:4173/claims/sample-1",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-claim-editor-light-1024",
+      "url": "http://127.0.0.1:4173/claims/sample-1",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-claim-editor-light-768",
+      "url": "http://127.0.0.1:4173/claims/sample-1",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-claim-editor-light-390",
+      "url": "http://127.0.0.1:4173/claims/sample-1",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "A clear purpose makes a faster review.",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Amounts are tax-inclusive. Foreign rates are entered ma",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Add receipt",
+          "size": "11px",
+          "tag": "STRONG"
+        },
+        {
+          "text": "Required when any warning is present. Blocks cannot be ",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Append-only history. Earlier entries cannot be changed ",
+          "size": "10px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-returned-claim-light-1440",
+      "url": "http://127.0.0.1:4173/claims/sample-6",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-returned-claim-light-1024",
+      "url": "http://127.0.0.1:4173/claims/sample-6",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-returned-claim-light-768",
+      "url": "http://127.0.0.1:4173/claims/sample-6",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-returned-claim-light-390",
+      "url": "http://127.0.0.1:4173/claims/sample-6",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "Please clarify the business purpose and included tax. ·",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "A clear purpose makes a faster review.",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Amounts are tax-inclusive. Foreign rates are entered ma",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Add receipt",
+          "size": "11px",
+          "tag": "STRONG"
+        },
+        {
+          "text": "Required when any warning is present. Blocks cannot be ",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Append-only history. Earlier entries cannot be changed ",
+          "size": "10px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-privacy-light-1440",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-privacy-light-1024",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-privacy-light-768",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-privacy-light-390",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "Full-browser backup and restore are Finance-only becaus",
+          "size": "11px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-notifications-light-1440",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-notifications-light-1024",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-notifications-light-768",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-notifications-light-390",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "CLM-2026-0006 · Design review travel",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Included in PAY-SAMPLE-1. No real payment made.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Approved for reimbursement.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Business purpose and receipts reviewed.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Business purpose and receipts reviewed.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Please clarify the business purpose and included tax.",
+          "size": "11px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-about-light-1440",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-about-light-1024",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-about-light-768",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-about-light-390",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-overview-dark-1440",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-overview-dark-1024",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-overview-dark-768",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-overview-dark-390",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "Active and completed claims · INR",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Expense date · Last six months",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Your latest expenses and where they stand.",
+          "size": "10px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-claims-dark-1440",
+      "url": "http://127.0.0.1:4173/claims",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-claims-dark-1024",
+      "url": "http://127.0.0.1:4173/claims",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-claims-dark-768",
+      "url": "http://127.0.0.1:4173/claims",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-claims-dark-390",
+      "url": "http://127.0.0.1:4173/claims",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-claim-editor-dark-1440",
+      "url": "http://127.0.0.1:4173/claims/sample-1",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-claim-editor-dark-1024",
+      "url": "http://127.0.0.1:4173/claims/sample-1",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-claim-editor-dark-768",
+      "url": "http://127.0.0.1:4173/claims/sample-1",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-claim-editor-dark-390",
+      "url": "http://127.0.0.1:4173/claims/sample-1",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "A clear purpose makes a faster review.",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Amounts are tax-inclusive. Foreign rates are entered ma",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Add receipt",
+          "size": "11px",
+          "tag": "STRONG"
+        },
+        {
+          "text": "Required when any warning is present. Blocks cannot be ",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Append-only history. Earlier entries cannot be changed ",
+          "size": "10px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-returned-claim-dark-1440",
+      "url": "http://127.0.0.1:4173/claims/sample-6",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-returned-claim-dark-1024",
+      "url": "http://127.0.0.1:4173/claims/sample-6",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-returned-claim-dark-768",
+      "url": "http://127.0.0.1:4173/claims/sample-6",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-returned-claim-dark-390",
+      "url": "http://127.0.0.1:4173/claims/sample-6",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "Please clarify the business purpose and included tax. ·",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "A clear purpose makes a faster review.",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Amounts are tax-inclusive. Foreign rates are entered ma",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Add receipt",
+          "size": "11px",
+          "tag": "STRONG"
+        },
+        {
+          "text": "Required when any warning is present. Blocks cannot be ",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Append-only history. Earlier entries cannot be changed ",
+          "size": "10px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-privacy-dark-1440",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-privacy-dark-1024",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-privacy-dark-768",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-privacy-dark-390",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "Full-browser backup and restore are Finance-only becaus",
+          "size": "11px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-notifications-dark-1440",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-notifications-dark-1024",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-notifications-dark-768",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-notifications-dark-390",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "CLM-2026-0006 · Design review travel",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Included in PAY-SAMPLE-1. No real payment made.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Approved for reimbursement.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Business purpose and receipts reviewed.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Business purpose and receipts reviewed.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Please clarify the business purpose and included tax.",
+          "size": "11px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-about-dark-1440",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-about-dark-1024",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-about-dark-768",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "employee-about-dark-390",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-inbox-light-1440",
+      "url": "http://127.0.0.1:4173/manager",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-inbox-light-1024",
+      "url": "http://127.0.0.1:4173/manager",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-inbox-light-768",
+      "url": "http://127.0.0.1:4173/manager",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-inbox-light-390",
+      "url": "http://127.0.0.1:4173/manager",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "Arin Moss",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Isha Reed",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Nila Brook",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Mira Vale",
+          "size": "11px",
+          "tag": "TD"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-dashboard-light-1440",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-dashboard-light-1024",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-dashboard-light-768",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-dashboard-light-390",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "Active and completed claims · INR",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Expense date · Last six months",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Ordered by requested amount, highest first.",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Theo Fern",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Nila Brook",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Arin Moss",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Isha Reed",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Isha Reed",
+          "size": "11px",
+          "tag": "TD"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-approval-light-1440",
+      "url": "http://127.0.0.1:4173/claims/sample-2",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-approval-light-1024",
+      "url": "http://127.0.0.1:4173/claims/sample-2",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-approval-light-768",
+      "url": "http://127.0.0.1:4173/claims/sample-2",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-approval-light-390",
+      "url": "http://127.0.0.1:4173/claims/sample-2",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "A clear purpose makes a faster review.",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Amounts are tax-inclusive. Foreign rates are entered ma",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Required when any warning is present. Blocks cannot be ",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Append-only history. Earlier entries cannot be changed ",
+          "size": "10px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-privacy-light-1440",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-privacy-light-1024",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-privacy-light-768",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-privacy-light-390",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "Full-browser backup and restore are Finance-only becaus",
+          "size": "11px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-notifications-light-1440",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-notifications-light-1024",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-notifications-light-768",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-notifications-light-390",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "CLM-2026-0002 · Product research visit",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "CLM-2026-0010 · Quarterly planning meet",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "CLM-2026-0018 · Design review travel",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "CLM-2026-0026 · Product research visit",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Included in PAY-SAMPLE-2. No real payment made.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Included in PAY-SAMPLE-2. No real payment made.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Included in PAY-SAMPLE-1. No real payment made.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Included in PAY-SAMPLE-1. No real payment made.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Please clarify the business purpose and included tax.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Approved for reimbursement.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Approved for reimbursement.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Trip was cancelled; no reimbursement needed.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-about-light-1440",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-about-light-1024",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-about-light-768",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-about-light-390",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-inbox-dark-1440",
+      "url": "http://127.0.0.1:4173/manager",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-inbox-dark-1024",
+      "url": "http://127.0.0.1:4173/manager",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-inbox-dark-768",
+      "url": "http://127.0.0.1:4173/manager",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-inbox-dark-390",
+      "url": "http://127.0.0.1:4173/manager",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "Arin Moss",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Isha Reed",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Nila Brook",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Mira Vale",
+          "size": "11px",
+          "tag": "TD"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-dashboard-dark-1440",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-dashboard-dark-1024",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-dashboard-dark-768",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-dashboard-dark-390",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "Active and completed claims · INR",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Expense date · Last six months",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Ordered by requested amount, highest first.",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Theo Fern",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Nila Brook",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Arin Moss",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Isha Reed",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Isha Reed",
+          "size": "11px",
+          "tag": "TD"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-approval-dark-1440",
+      "url": "http://127.0.0.1:4173/claims/sample-2",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-approval-dark-1024",
+      "url": "http://127.0.0.1:4173/claims/sample-2",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-approval-dark-768",
+      "url": "http://127.0.0.1:4173/claims/sample-2",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-approval-dark-390",
+      "url": "http://127.0.0.1:4173/claims/sample-2",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "A clear purpose makes a faster review.",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Amounts are tax-inclusive. Foreign rates are entered ma",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Required when any warning is present. Blocks cannot be ",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Append-only history. Earlier entries cannot be changed ",
+          "size": "10px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-privacy-dark-1440",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-privacy-dark-1024",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-privacy-dark-768",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-privacy-dark-390",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "Full-browser backup and restore are Finance-only becaus",
+          "size": "11px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-notifications-dark-1440",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-notifications-dark-1024",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-notifications-dark-768",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-notifications-dark-390",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "CLM-2026-0002 · Product research visit",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "CLM-2026-0010 · Quarterly planning meet",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "CLM-2026-0018 · Design review travel",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "CLM-2026-0026 · Product research visit",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Included in PAY-SAMPLE-2. No real payment made.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Included in PAY-SAMPLE-2. No real payment made.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Included in PAY-SAMPLE-1. No real payment made.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Included in PAY-SAMPLE-1. No real payment made.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Please clarify the business purpose and included tax.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Approved for reimbursement.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Approved for reimbursement.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Trip was cancelled; no reimbursement needed.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-about-dark-1440",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-about-dark-1024",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-about-dark-768",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "manager-about-dark-390",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-queue-light-1440",
+      "url": "http://127.0.0.1:4173/finance",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-queue-light-1024",
+      "url": "http://127.0.0.1:4173/finance",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-queue-light-768",
+      "url": "http://127.0.0.1:4173/finance",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-queue-light-390",
+      "url": "http://127.0.0.1:4173/finance",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "Nila Brook",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Mira Vale",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Theo Fern",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Arin Moss",
+          "size": "11px",
+          "tag": "TD"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-batches-light-1440",
+      "url": "http://127.0.0.1:4173/batches",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-batches-light-1024",
+      "url": "http://127.0.0.1:4173/batches",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-batches-light-768",
+      "url": "http://127.0.0.1:4173/batches",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-batches-light-390",
+      "url": "http://127.0.0.1:4173/batches",
+      "violations": [
+        {
+          "id": "scrollable-region-focusable",
+          "impact": "serious",
+          "description": "Ensure elements that have scrollable content are accessible by keyboard",
+          "nodes": [
+            {
+              "target": [
+                ".table-scroll"
+              ],
+              "summary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+            }
+          ]
+        }
+      ],
+      "serious": 1,
+      "overflow": false,
+      "small": [
+        {
+          "text": "This is a payment record, not a payment service. No ban",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Finance-approved claims only.",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "A permanent record of completed demo reimbursements.",
+          "size": "10px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-dashboard-light-1440",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-dashboard-light-1024",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-dashboard-light-768",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-dashboard-light-390",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "Active and completed claims · INR",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Expense date · Last six months",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Ordered by requested amount, highest first.",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Theo Fern",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Nila Brook",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Arin Moss",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Isha Reed",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Isha Reed",
+          "size": "11px",
+          "tag": "TD"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-review-light-1440",
+      "url": "http://127.0.0.1:4173/claims/sample-3",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-review-light-1024",
+      "url": "http://127.0.0.1:4173/claims/sample-3",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-review-light-768",
+      "url": "http://127.0.0.1:4173/claims/sample-3",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-review-light-390",
+      "url": "http://127.0.0.1:4173/claims/sample-3",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "A clear purpose makes a faster review.",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Amounts are tax-inclusive. Foreign rates are entered ma",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Required when any warning is present. Blocks cannot be ",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Append-only history. Earlier entries cannot be changed ",
+          "size": "10px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-policy-light-1440",
+      "url": "http://127.0.0.1:4173/policy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [
+        {
+          "tag": "INPUT",
+          "text": "Travel receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Local conveyance receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Meals receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Accommodation receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Client entertainment receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Office supplies receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Internet and phone receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Other receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Engineering",
+          "width": 762,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Operations",
+          "width": 762,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Design",
+          "width": 762,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Standard",
+          "width": 762,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Lead",
+          "width": 762,
+          "height": 44
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-policy-light-1024",
+      "url": "http://127.0.0.1:4173/policy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [
+        {
+          "tag": "INPUT",
+          "text": "Travel receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Local conveyance receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Meals receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Accommodation receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Client entertainment receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Office supplies receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Internet and phone receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Other receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Engineering",
+          "width": 722,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Operations",
+          "width": 722,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Design",
+          "width": 722,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Standard",
+          "width": 722,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Lead",
+          "width": 722,
+          "height": 44
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-policy-light-768",
+      "url": "http://127.0.0.1:4173/policy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [
+        {
+          "tag": "INPUT",
+          "text": "Travel receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Local conveyance receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Meals receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Accommodation receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Client entertainment receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Office supplies receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Internet and phone receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Other receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Engineering",
+          "width": 686,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Operations",
+          "width": 686,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Design",
+          "width": 686,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Standard",
+          "width": 686,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Lead",
+          "width": 686,
+          "height": 44
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-policy-light-390",
+      "url": "http://127.0.0.1:4173/policy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "Submitted and returned claims keep the policy version f",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Amounts in INR. GL codes are included in the simple acc",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Try changes before publishing.",
+          "size": "10px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [
+        {
+          "tag": "INPUT",
+          "text": "Travel receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Local conveyance receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Meals receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Accommodation receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Client entertainment receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Office supplies receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Internet and phone receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Other receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Engineering",
+          "width": 324,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Operations",
+          "width": 324,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Design",
+          "width": 324,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Standard",
+          "width": 324,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Lead",
+          "width": 324,
+          "height": 44
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-settings-light-1440",
+      "url": "http://127.0.0.1:4173/settings",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-settings-light-1024",
+      "url": "http://127.0.0.1:4173/settings",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-settings-light-768",
+      "url": "http://127.0.0.1:4173/settings",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-settings-light-390",
+      "url": "http://127.0.0.1:4173/settings",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "Simple files, not an accounting integration. General-le",
+          "size": "10px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-privacy-light-1440",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-privacy-light-1024",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-privacy-light-768",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-privacy-light-390",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-notifications-light-1440",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-notifications-light-1024",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-notifications-light-768",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-notifications-light-390",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "CLM-2026-0003 · Workspace essentials",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "CLM-2026-0011 · Field operations visit",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "CLM-2026-0019 · Client workshop travel",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "CLM-2026-0027 · Workspace essentials",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Please clarify the business purpose and included tax.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Business purpose and receipts reviewed.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Business purpose and receipts reviewed.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Business purpose and receipts reviewed.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Trip was cancelled; no reimbursement needed.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Personal expenditure is not reimbursable.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-about-light-1440",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-about-light-1024",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-about-light-768",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-about-light-390",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-queue-dark-1440",
+      "url": "http://127.0.0.1:4173/finance",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-queue-dark-1024",
+      "url": "http://127.0.0.1:4173/finance",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-queue-dark-768",
+      "url": "http://127.0.0.1:4173/finance",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-queue-dark-390",
+      "url": "http://127.0.0.1:4173/finance",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "Nila Brook",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Mira Vale",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Theo Fern",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Arin Moss",
+          "size": "11px",
+          "tag": "TD"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-batches-dark-1440",
+      "url": "http://127.0.0.1:4173/batches",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-batches-dark-1024",
+      "url": "http://127.0.0.1:4173/batches",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-batches-dark-768",
+      "url": "http://127.0.0.1:4173/batches",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-batches-dark-390",
+      "url": "http://127.0.0.1:4173/batches",
+      "violations": [
+        {
+          "id": "scrollable-region-focusable",
+          "impact": "serious",
+          "description": "Ensure elements that have scrollable content are accessible by keyboard",
+          "nodes": [
+            {
+              "target": [
+                ".table-scroll"
+              ],
+              "summary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+            }
+          ]
+        }
+      ],
+      "serious": 1,
+      "overflow": false,
+      "small": [
+        {
+          "text": "This is a payment record, not a payment service. No ban",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Finance-approved claims only.",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "A permanent record of completed demo reimbursements.",
+          "size": "10px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-dashboard-dark-1440",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-dashboard-dark-1024",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-dashboard-dark-768",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-dashboard-dark-390",
+      "url": "http://127.0.0.1:4173/dashboard",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "Active and completed claims · INR",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Expense date · Last six months",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Ordered by requested amount, highest first.",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Theo Fern",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Nila Brook",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Arin Moss",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Isha Reed",
+          "size": "11px",
+          "tag": "TD"
+        },
+        {
+          "text": "Isha Reed",
+          "size": "11px",
+          "tag": "TD"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-review-dark-1440",
+      "url": "http://127.0.0.1:4173/claims/sample-3",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-review-dark-1024",
+      "url": "http://127.0.0.1:4173/claims/sample-3",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-review-dark-768",
+      "url": "http://127.0.0.1:4173/claims/sample-3",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-review-dark-390",
+      "url": "http://127.0.0.1:4173/claims/sample-3",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "A clear purpose makes a faster review.",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Amounts are tax-inclusive. Foreign rates are entered ma",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Required when any warning is present. Blocks cannot be ",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Append-only history. Earlier entries cannot be changed ",
+          "size": "10px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-policy-dark-1440",
+      "url": "http://127.0.0.1:4173/policy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [
+        {
+          "tag": "INPUT",
+          "text": "Travel receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Local conveyance receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Meals receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Accommodation receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Client entertainment receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Office supplies receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Internet and phone receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Other receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Engineering",
+          "width": 762,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Operations",
+          "width": 762,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Design",
+          "width": 762,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Standard",
+          "width": 762,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Lead",
+          "width": 762,
+          "height": 44
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-policy-dark-1024",
+      "url": "http://127.0.0.1:4173/policy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [
+        {
+          "tag": "INPUT",
+          "text": "Travel receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Local conveyance receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Meals receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Accommodation receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Client entertainment receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Office supplies receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Internet and phone receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Other receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Engineering",
+          "width": 722,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Operations",
+          "width": 722,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Design",
+          "width": 722,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Standard",
+          "width": 722,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Lead",
+          "width": 722,
+          "height": 44
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-policy-dark-768",
+      "url": "http://127.0.0.1:4173/policy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [
+        {
+          "tag": "INPUT",
+          "text": "Travel receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Local conveyance receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Meals receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Accommodation receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Client entertainment receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Office supplies receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Internet and phone receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Other receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Engineering",
+          "width": 686,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Operations",
+          "width": 686,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Design",
+          "width": 686,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Standard",
+          "width": 686,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Lead",
+          "width": 686,
+          "height": 44
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-policy-dark-390",
+      "url": "http://127.0.0.1:4173/policy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "Submitted and returned claims keep the policy version f",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Amounts in INR. GL codes are included in the simple acc",
+          "size": "10px",
+          "tag": "P"
+        },
+        {
+          "text": "Try changes before publishing.",
+          "size": "10px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [
+        {
+          "tag": "INPUT",
+          "text": "Travel receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Local conveyance receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Meals receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Accommodation receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Client entertainment receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Office supplies receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Internet and phone receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "INPUT",
+          "text": "Other receipt required",
+          "width": 20,
+          "height": 20
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Engineering",
+          "width": 324,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Operations",
+          "width": 324,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Design",
+          "width": 324,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Standard",
+          "width": 324,
+          "height": 44
+        },
+        {
+          "tag": "SUMMARY",
+          "text": "Lead",
+          "width": 324,
+          "height": 44
+        }
+      ],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-settings-dark-1440",
+      "url": "http://127.0.0.1:4173/settings",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-settings-dark-1024",
+      "url": "http://127.0.0.1:4173/settings",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-settings-dark-768",
+      "url": "http://127.0.0.1:4173/settings",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-settings-dark-390",
+      "url": "http://127.0.0.1:4173/settings",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "Simple files, not an accounting integration. General-le",
+          "size": "10px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-privacy-dark-1440",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-privacy-dark-1024",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-privacy-dark-768",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-privacy-dark-390",
+      "url": "http://127.0.0.1:4173/privacy",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-notifications-dark-1440",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-notifications-dark-1024",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-notifications-dark-768",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-notifications-dark-390",
+      "url": "http://127.0.0.1:4173/notifications",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [
+        {
+          "text": "CLM-2026-0003 · Workspace essentials",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "CLM-2026-0011 · Field operations visit",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "CLM-2026-0019 · Client workshop travel",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "CLM-2026-0027 · Workspace essentials",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Please clarify the business purpose and included tax.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Business purpose and receipts reviewed.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Business purpose and receipts reviewed.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Business purpose and receipts reviewed.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Trip was cancelled; no reimbursement needed.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Draft created.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Personal expenditure is not reimbursable.",
+          "size": "11px",
+          "tag": "P"
+        },
+        {
+          "text": "Submitted under policy v1.",
+          "size": "11px",
+          "tag": "P"
+        }
+      ],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-about-dark-1440",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-about-dark-1024",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-about-dark-768",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    },
+    {
+      "name": "finance-about-dark-390",
+      "url": "http://127.0.0.1:4173/about",
+      "violations": [],
+      "serious": 0,
+      "overflow": false,
+      "small": [],
+      "tiny": [],
+      "consoleErrors": []
+    }
+  ]
+}

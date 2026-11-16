@@ -1,0 +1,31 @@
+Initial test failure evidence — 2026-11-16T04:54:52Z
+Privacy-sanitised excerpt: returned account salt/hash fixtures and unrelated passing password examples are omitted. Failure messages and test totals are unchanged.
+
+FAIL tests/core.test.ts > integer money arithmetic > property: rational multiplication agrees with BigInt oracle
+Error: Property failed after 1 tests
+{ seed: 1171610737, path: "0:0:0:0", endOnFailure: true }
+Counterexample: [0,0,1]
+Caused by: Error: Property failed by returning false
+
+FAIL tests/core.test.ts > integer money arithmetic > property: splitting inclusive taxes never changes claim total
+Error: Property failed after 1 tests
+{ seed: 2121172757, path: "0:0", endOnFailure: true }
+Counterexample: [[]]
+Caused by: Error: Property failed by returning false
+
+FAIL tests/core.test.ts > integer money arithmetic > property: decimal round trip preserves paise
+Error: Property failed after 1 tests
+{ seed: -1369351695, path: "0:0", endOnFailure: true }
+Counterexample: [0]
+Caused by: Error: Property failed by returning false
+
+FAIL tests/store.test.ts > ClaimStore enforces workflow and storage > employee cannot export full browser backup
+AssertionError: promise resolved instead of rejecting
+Returned backup payload omitted for privacy.
+
+FAIL tests/store.test.ts > ClaimStore enforces workflow and storage > employee cannot import full browser backup
+AssertionError: promise resolved "'Imported 0 claims. Skipped 1 existing…'" instead of rejecting
+Received: "Imported 0 claims. Skipped 1 existing claim identifiers; no existing claim or audit entry was overwritten."
+
+Test Files  2 failed (2)
+Tests  5 failed | 441 passed (446)

@@ -1,0 +1,7 @@
+{
+  "time": "2026-11-16T04:59:56.867Z",
+  "label": "production smoke",
+  "url": "http://127.0.0.1:4173/",
+  "error": "TimeoutError: locator.waitFor: Timeout 6000ms exceeded.\nCall log:\n  - waiting for getByRole('heading', { name: 'Welcome to your workspace' }) to be visible\n",
+  "screenshot": "screenshots/failure-2026-11-16T04-59-56-796Z.png"
+}

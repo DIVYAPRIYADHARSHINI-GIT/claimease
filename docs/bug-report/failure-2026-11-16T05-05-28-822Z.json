@@ -1,0 +1,7 @@
+{
+  "time": "2026-11-16T05:05:28.899Z",
+  "label": "dark theme persists over direct reload",
+  "url": "http://127.0.0.1:4173/about",
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nnull !== 'dark'\n",
+  "screenshot": "screenshots/failure-2026-11-16T05-05-28-822Z.png"
+}

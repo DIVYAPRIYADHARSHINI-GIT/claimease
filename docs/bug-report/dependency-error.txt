@@ -1,0 +1,8 @@
+BUG-03 — dependency audit, 2026-11-16T04:42:42Z
+
+Exact npm install output:
+added 104 packages, and audited 105 packages in 10s
+11 vulnerabilities (4 low, 3 moderate, 2 high, 2 critical)
+
+Follow-up npm audit confirmed vulnerable versions in the selected older development toolchain, including SvelteKit, Vite, Svelte and Vitest.
+No application was deployed and no dev server was exposed.

@@ -1,0 +1,16 @@
+import {it,expect} from 'vitest';
+import {readFileSync,existsSync} from 'node:fs';
+import {execFileSync} from 'node:child_process';
+import {validateState} from '../src/lib/backup';
+import {state} from './fixtures';
+it('BUG-01 isolated Git repository exists',()=>expect(execFileSync('git',['rev-parse','--show-toplevel'],{encoding:'utf8'}).trim().endsWith('/claimease')).toBe(true));
+it('BUG-02 project implementation checklist exists',()=>expect(existsSync('docs/IMPLEMENTATION.md')).toBe(true));
+it('BUG-05 no removed SvelteKit configuration',()=>expect(existsSync('svelte.config.js')).toBe(false));
+it('BUG-06/07 catch-all route uses valid syntax',()=>{expect(existsSync('src/routes/[...path]/+page.svelte')).toBe(true);expect(existsSync('src/routes/[[...path]]')).toBe(false);});
+it('BUG-08 current TypeScript base',()=>expect(JSON.parse(readFileSync('tsconfig.json','utf8')).extends).toBe('$app/tsconfig'));
+it('BUG-12 no deprecated library alias',()=>expect(readFileSync('vite.config.ts','utf8')).not.toContain('alias:'));
+it('BUG-15 script CSP generated with hashes, not unsafe-inline',()=>{expect(readFileSync('vite.config.ts','utf8')).toContain("mode:'hash'");const v=JSON.parse(readFileSync('vercel.json','utf8'));expect(v.headers[0].headers.find((h:{key:string})=>h.key==='Content-Security-Policy').value).not.toContain("script-src 'self';");});
+it('BUG-19 normaliser covers receipt separator',()=>expect(readFileSync('src/lib/exports.ts','utf8')).toContain('[–—·•]'));
+it('BUG-21 recorded batch scroll region keyboard accessible',()=>expect(readFileSync('src/lib/screens/Batches.svelte','utf8')).toContain('aria-label="Recorded payment batches" tabindex="0"'));
+it('backup rejects a mismatched payment-batch total',()=>{const s=state();s.claims[0].status='Paid';s.batches=[{id:'b1',date:'2026-11-16',mode:'UPI',reference:'DEMO',claimIds:['c1'],total:1,createdBy:'f1',paidAt:'2026-11-16T00:00:00Z'}];expect(()=>validateState(s)).toThrow(/total/);});
+it('backup rejects malformed lock/session data',()=>{const s=state();(s as unknown as {locks:unknown}).locks=null;expect(()=>validateState(s)).toThrow();});

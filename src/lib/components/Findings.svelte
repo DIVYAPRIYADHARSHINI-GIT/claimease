@@ -1,0 +1,2 @@
+<script lang="ts">import type {Finding} from '../types';import Status from './Status.svelte';export let findings:Finding[]=[];export let compact=false;</script>
+{#if findings.length}<div class:compact class="findings">{#each findings as finding}<div class="finding {finding.severity.toLowerCase()}"><Status status={finding.severity}/><div><strong>{finding.message}</strong><p>{finding.fix}</p></div></div>{/each}</div>{:else}<div class="clear-check"><span aria-hidden="true">✓</span> No policy findings for these details.</div>{/if}

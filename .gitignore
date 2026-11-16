@@ -1,0 +1,14 @@
+node_modules/
+.svelte-kit/
+build/
+.vercel/
+.env
+.env.*
+.DS_Store
+test-results/
+playwright-report/
+coverage/
+*.log
+docs/verification/backup-private.json
+docs/verification/*-private.json
+docs/verification/*.csv

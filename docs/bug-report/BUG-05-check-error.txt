@@ -1,0 +1,13 @@
+
+> claimease@1.0.0 check
+> svelte-kit sync && svelte-check --tsconfig ./tsconfig.json
+
+> config_file_unsupported
+`svelte.config.js` is no longer used. Please pass configuration via the `sveltekit(...)` plugin in your Vite config.
+https://svelte.dev/e/kit/config_file_unsupported
+`svelte.config.js` is no longer used. Please pass configuration via the `sveltekit(...)` plugin in your Vite config.
+https://svelte.dev/e/kit/config_file_unsupported
+    at BasicMinimalPluginContext.handler (file:///Users/softage/Designer%20Projects/starter/claimease/node_modules/@sveltejs/kit/src/exports/vite/index.js:279:9)
+    at runConfigHook (file:///Users/softage/Designer%20Projects/starter/claimease/node_modules/vite/dist/node/chunks/node.js:38288:42)
+    at async Module.resolveConfig (file:///Users/softage/Designer%20Projects/starter/claimease/node_modules/vite/dist/node/chunks/node.js:37695:11)
+    at async file:///Users/softage/Designer%20Projects/starter/claimease/node_modules/@sveltejs/kit/src/cli.js:102:23

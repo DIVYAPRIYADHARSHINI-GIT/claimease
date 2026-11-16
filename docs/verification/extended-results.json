@@ -1,0 +1,20 @@
+{
+  "time": "2026-11-16T05:19:30.247Z",
+  "passed": 12,
+  "checks": [
+    "export real browser backup with an additional policy version",
+    "another browser profile starts fresh without changing policy identifiers",
+    "cross-browser import restores claims, payment batches and receipts",
+    "tampered receipt backup is rejected without overwriting data",
+    "configure second-level approval through Finance UI",
+    "submit a two-line claim for second-level review",
+    "line rejection updates approved amount without changing requested total",
+    "first manager approval waits for a different assigned manager",
+    "second assigned manager completes approval",
+    "keyboard can focus and scroll the payment table on mobile",
+    "modal traps keyboard focus and closes with Escape",
+    "no runtime third-party requests or data uploads"
+  ],
+  "externalRequests": [],
+  "consoleErrors": []
+}

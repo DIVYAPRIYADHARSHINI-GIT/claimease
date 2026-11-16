@@ -1,0 +1,10 @@
+BUG-10 — actual unit-test failure excerpt, 2026-11-16T04:54:52Z
+
+FAIL tests/core.test.ts > integer money arithmetic > property: rational multiplication agrees with BigInt oracle
+Error: Property failed after 1 tests
+{ seed: 1171610737, path: "0:0:0:0", endOnFailure: true }
+Counterexample: [0,0,1]
+Caused by: Error: Property failed by returning false
+
+Two related properties also failed at [[]] and [0].
+The assertion-return value, not a money mismatch, caused these failures.
