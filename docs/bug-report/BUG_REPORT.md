@@ -2,7 +2,7 @@
 
 16 November 2026 · Platform: Designer
 
-32 observed bugs: 30 Fixed, 2 Open. Original severity totals: Critical 3, High 12, Medium 10, Low 7.
+33 observed bugs: 31 Fixed, 2 Open. Original severity totals: Critical 3, High 12, Medium 10, Low 8.
 
 ## Summary
 
@@ -11,7 +11,7 @@
 | Critical | 3 | 2 | 1 |
 | High | 12 | 12 | 0 |
 | Medium | 10 | 10 | 0 |
-| Low | 7 | 6 | 1 |
+| Low | 8 | 7 | 1 |
 
 The two open items are the Designer plan-tool restriction (original UI screenshot needed from the user) and residual low-severity development dependency advisories. BUG-03 retains its original Critical severity; all original high/critical dependency findings were removed. Production dependencies have zero advisories. No application workflow failure remains open in this report.
 
@@ -757,4 +757,28 @@ No after screenshot: issue remains open.
 ### After
 
 ![BUG-32 after](screenshots/BUG-32-after-fixed.png)
+
+## BUG-33 — Final verification command omitted the production base URL
+
+- Date/time: 2026-11-16T06:46:10Z.
+- Where: final read-only verification command, after the report push.
+- Steps: invoked shared browser helpers without the required BASE_URL override.
+- Expected: check the public production domain.
+- Actual: `page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/`. The stopped local preview, not the deployed site, was targeted.
+- Severity: Low.
+- Root cause: agent command omitted the production URL and inherited the helper's local default.
+- Fix: replace the one-off invocation with a committed final-live-check script that explicitly sets and asserts the public production origin before importing helpers.
+- Test added: origin assertion, all 21 applicable role/page checks and real production build-log verification.
+- Verification: corrected script passed all 21 public role/page checks at 06:47:52Z with zero console errors, READY production, no build warning/error lines and no configured environment variables.
+- Status: Fixed.
+- Before screenshot: `screenshots/BUG-33-before-wrong-target.png`.
+- After screenshot: `screenshots/BUG-33-after-fixed.png`.
+
+### Before
+
+![BUG-33 before](screenshots/BUG-33-before-wrong-target.png)
+
+### After
+
+![BUG-33 after](screenshots/BUG-33-after-fixed.png)
 

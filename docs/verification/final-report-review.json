@@ -1,13 +1,13 @@
 {
-  "reviewedAt": "2026-11-16T06:43:30Z",
+  "reviewedAt": "2026-11-16T06:50:00Z",
   "pdf": "docs/bug-report/BUG_REPORT.pdf",
-  "pages": 64,
-  "bugs": 32,
-  "fixed": 30,
+  "pages": 66,
+  "bugs": 33,
+  "fixed": 31,
   "open": 2,
-  "severity": {"Critical":3,"High":12,"Medium":10,"Low":7},
-  "embeddedImages": 63,
-  "review": "Final PDF opened in Designer: cover and pages 21, 49, 59, 61, 64 inspected in multi-page views across revisions; final page 36 opened at readable detail. Images were visible, labels readable and final severity/status totals reconciled. All 23 original design contact sheets and eight FX review screenshots were reviewed; all three live contact sheets were also opened.",
+  "severity": {"Critical":3,"High":12,"Medium":10,"Low":8},
+  "embeddedImages": 65,
+  "review": "Final 66-page PDF opened in Designer at pages 1, 65 and 66. Earlier revisions were inspected at pages 21, 49, 59, 61 and 64; page 36 was opened at readable detail. Images were visible, labels readable and final severity/status totals reconciled. All 23 original design contact sheets and eight FX review screenshots were reviewed; all three live contact sheets were also opened.",
   "privacy": "No token values or environment-file contents appear in reports/screenshots. Fictional demo sign-in password fields are masked. The unrequested CLI OIDC file was removed and its historical creation is documented in BUG-25.",
   "scope": "Automated image decode checks cover every embedded image. Manual PDF review sampled representative pages rather than claiming a page-by-page screen-reader audit."
 }

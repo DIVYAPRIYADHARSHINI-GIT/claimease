@@ -1,0 +1,8 @@
+BUG-33 · exact final verification command error
+2026-11-16T06:46:10Z
+
+page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/
+Call log:
+  - navigating to "http://127.0.0.1:4173/", waiting until "load"
+
+The invocation omitted BASE_URL and targeted a stopped local preview. This was not a public-site outage.

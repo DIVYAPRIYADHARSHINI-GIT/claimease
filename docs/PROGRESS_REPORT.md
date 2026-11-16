@@ -31,7 +31,7 @@ https://claimease-three.vercel.app
 https://github.com/DIVYAPRIYADHARSHINI-GIT/claimease
 
 ## BUG
-- The running log records 32 observed issues: 30 Fixed and 2 Open, including setup/tool failures, tests, visual defects, report-generation issues and deployment differences: [bug-log.md](bug-report/bug-log.md).
+- The running log records 33 observed issues: 31 Fixed and 2 Open, including setup/tool failures, tests, visual defects, report-generation issues and deployment differences: [bug-log.md](bug-report/bug-log.md).
 - The complete illustrated reports are [BUG_REPORT.md](bug-report/BUG_REPORT.md) and [BUG_REPORT.pdf](bug-report/BUG_REPORT.pdf), with original severity retained and actual before/after evidence.
 - BUG-25 records the unrequested CLI-created VERCEL_OIDC_TOKEN file. It was removed without displaying, using or committing its value; application storage was never changed.
 

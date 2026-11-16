@@ -454,3 +454,18 @@ Local verification before deployment: 459 unit/property/PDF-layout tests; the 70
 - Status: Fixed.
 - Before screenshot: `screenshots/BUG-32-before-render-stall.png` is a transcription of the observed process/timing evidence, not an application screen.
 - After screenshot: `screenshots/BUG-32-after-fixed.png`.
+
+## BUG-33 — Final verification command omitted the production base URL
+- Date/time: 2026-11-16T06:46:10Z.
+- Where: final read-only verification command, after the report push.
+- Steps: invoked shared browser helpers without the required BASE_URL override.
+- Expected: check the public production domain.
+- Actual: `page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:4173/`. The stopped local preview, not the deployed site, was targeted.
+- Severity: Low.
+- Root cause: agent command omitted the production URL and inherited the helper's local default.
+- Fix: replace the one-off invocation with a committed final-live-check script that explicitly sets and asserts the public production origin before importing helpers.
+- Test added: origin assertion, all 21 applicable role/page checks and real production build-log verification.
+- Verification: corrected script passed all 21 public role/page checks at 06:47:52Z with zero console errors, READY production, no build warning/error lines and no configured environment variables.
+- Status: Fixed.
+- Before screenshot: `screenshots/BUG-33-before-wrong-target.png`.
+- After screenshot: `screenshots/BUG-33-after-fixed.png`.
