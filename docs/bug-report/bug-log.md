@@ -406,9 +406,10 @@ Local verification before deployment: 459 unit/property/PDF-layout tests; the 70
 - Root cause: an obsolete npm cache-dir environment setting was supplied in the hosting build environment.
 - Fix: scoped install/build commands remove only that obsolete setting (case and separator variants), then run normal npm commands. No npm warning output is suppressed and no account-wide setting is changed.
 - Test added: inspect the next production deployment's real log for warnings/errors.
-- Status: Open.
+- Verification: READY production commit a4911bf27160823038445ab996b80fe9cf25911c was inspected at 2026-11-16T06:21:05Z. Combined stdout/stderr contained 10,963 bytes, a completed build and zero warning/error lines; configured environment-variable names were empty and .env.local was absent.
+- Status: Fixed.
 - Before screenshot: `screenshots/BUG-29-before-production-warning.png`.
-- After screenshot: pending clean remote build.
+- After screenshot: `screenshots/BUG-29-after-fixed.png`.
 
 ## BUG-30 — First live receipt-preview readiness check timed out
 - Date/time: 2026-11-16T06:05:29Z.
@@ -416,10 +417,40 @@ Local verification before deployment: 459 unit/property/PDF-layout tests; the 70
 - Steps: uploaded a synthetic receipt, then waited up to six seconds for the thumbnail image to be visible.
 - Expected: the preview readiness assertion passes and the test can open the receipt.
 - Actual: `TimeoutError: locator.waitFor: Timeout 6000ms exceeded` waiting for `.receipt-thumb img`. The capture taken immediately afterwards contains the receipt thumbnail and the successful local-storage toast; console errors were zero.
-- Severity: Medium (live verification/readiness failure; no demonstrated storage loss).
-- Root cause: under investigation; the assertion did not explicitly bring the receipt area into the viewport or confirm image decoding. Exact browser timing is not yet proven.
+- Severity: Medium.
+- Root cause: the verification sequence did not establish viewport/decoded-image readiness before asserting the preview. Storage and the thumbnail had succeeded by the failure capture. The precise original browser scheduling delay was not isolated, so no storage failure is claimed.
 - Fix: strengthen the real-user sequence by scrolling to the receipt control and checking decoded image dimensions; rerun on the live site without changing storage or extending the short timeout.
 - Test added: explicit image decode/viewport readiness and repeated public full-flow verification.
-- Status: Open.
+- Verification: two complete 75-check public-site runs passed after the change, including a repeat after the clean hosting rebuild, without increasing the six-second timeout. Both runs had zero console/page errors; a separate fresh incognito context still contained only the 30 sample claims.
+- Status: Fixed.
 - Before screenshot: `screenshots/failure-2026-11-16T06-05-29-612Z.png`.
-- After screenshot: pending live regression.
+- After screenshot: `screenshots/BUG-30-after-fixed.png`.
+
+## BUG-31 — Report severity totals omitted an entry with an explanatory suffix
+- Date/time: 2026-11-16T06:31Z, final PDF review.
+- Where: generated bug report summary table and cover.
+- Steps: opened the final PDF and reconciled its severity totals against the 30 entries.
+- Expected: severity counts sum to the total number of bugs.
+- Actual: the cover showed 30 bugs but Critical 3 + High 12 + Medium 8 + Low 6 = 29. BUG-27's Medium severity included an explanatory parenthesis and was not counted by exact-string matching.
+- Severity: Low.
+- Root cause: the report generator parsed the entire severity line as the category instead of its leading severity label.
+- Fix: parse the leading allowed severity label while retaining the full original description, and fail report generation if either severity or status totals do not reconcile.
+- Test added: mandatory reconciliation assertions in the generator. A follow-up run at 06:38Z correctly failed with `Error: Bug severity/status totals do not reconcile.` because a later Open status also had a parenthetical suffix. The same leading-label parsing fix was applied to status; the assertion prevents another misleading report. Extra evidence: `screenshots/BUG-31-before-status-recurrence.png`.
+- Status: Fixed.
+- Before screenshot: `screenshots/BUG-31-before-severity-count.png`.
+- After screenshot: `screenshots/BUG-31-after-fixed.png`.
+
+## BUG-32 — Report renderer stalled while opening a fresh Chrome page
+- Date/time: 2026-11-16T06:34:13Z start; stopped after 2m28s.
+- Where: documentation-only bug-report generator.
+- Steps: reran report generation after correcting summary counts.
+- Expected: finish in seconds, as prior 4–8 second report runs did.
+- Actual: no progress output or new report images for more than two minutes; process inspection showed the report Node process and an idle Chrome process but no active renderer. The agent stopped the task after 2m28s. No application or live deployment was affected.
+- Severity: Medium.
+- Root cause: Chrome page startup stalled; the underlying platform cause is not established. The documentation script had no whole-process timeout.
+- Fix: run report generation under a 45-second child-process watchdog and Mac keep-awake wrapper; rerun with a fresh browser process.
+- Test added: watchdog rejects a stalled renderer rather than waiting indefinitely; verify output image count and PDF after rerun.
+- Verification: the watchdog-controlled fresh-browser rerun completed in eight seconds, with 32 entries and all 62 then-required evidence images decoded/embedded; it exited zero. The underlying one-off Chrome startup cause remains unknown, but the unbounded wait is removed.
+- Status: Fixed.
+- Before screenshot: `screenshots/BUG-32-before-render-stall.png` is a transcription of the observed process/timing evidence, not an application screen.
+- After screenshot: `screenshots/BUG-32-after-fixed.png`.

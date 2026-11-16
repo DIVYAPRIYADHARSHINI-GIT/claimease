@@ -1,8 +1,11 @@
 {
-  "checkedAt": "2026-11-16T06:05:40.855Z",
+  "time": "2026-11-16T06:21:05.165Z",
+  "state": "READY",
+  "commit": "a4911bf27160823038445ab996b80fe9cf25911c",
+  "exitCode": 0,
+  "logBytes": 10963,
   "buildCompleted": true,
-  "warningOrErrorLines": [
-    "2026-11-16T06:01:35.947Z  npm warn Unknown env config \"cache-dir\". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.",
-    "2026-11-16T06:01:39.368Z  npm warn Unknown env config \"cache-dir\". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options."
-  ]
+  "warningOrErrorLines": [],
+  "environmentVariableNames": [],
+  "localCredentialFileExists": false
 }

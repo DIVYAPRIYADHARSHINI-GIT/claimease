@@ -4,7 +4,13 @@
 
 ## Live demo
 
-Public production domain assigned by Vercel: **https://claimease-three.vercel.app**. Deployment/live verification is in progress; this paragraph will be updated after verification. Repository: **https://github.com/DIVYAPRIYADHARSHINI-GIT/claimease**. This is not a production office service.
+**Live application: https://claimease-three.vercel.app**
+
+**Public repository: https://github.com/DIVYAPRIYADHARSHINI-GIT/claimease**
+
+The public sign-in page opens in a fresh incognito browser without a Vercel login. Protected workspaces use the simulated demo sign-in below. Git pushes to `main` automatically deploy to the existing **Hobby** hosting project; the deployed commit was verified against GitHub. This is not a production office service.
+
+Verified results: 459 unit/property/PDF-layout tests; the 70-check main browser journey in four desktop/mobile and light/dark configurations; 53 additional storage, second-approval, cross-browser backup, boundary and policy-panel checks; 192 screenshot/axe audits with no serious/critical findings; and 75 live-site checks repeated successfully after the final hosting-build fix. Local and remote builds have zero errors and no new warnings; live console/page errors were zero. See `docs/PROGRESS_REPORT.md` and the actual result files under `docs/verification/`.
 
 ## Important privacy and authentication limits
 

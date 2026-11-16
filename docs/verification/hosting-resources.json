@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-11-16T06:35:10.274Z",
+  "project": "claimease",
+  "plan": "hobby (verified by vercel teams ls)",
+  "state": "READY",
+  "target": "production",
+  "commit": "a4911bf27160823038445ab996b80fe9cf25911c",
+  "gitProvider": "1",
+  "regions": [
+    "iad1"
+  ],
+  "functions": [],
+  "builds": [],
+  "resourcesCreated": [
+    "Vercel hosting project claimease"
+  ],
+  "configuredEnvironmentVariableNames": [],
+  "publicDomain": "https://claimease-three.vercel.app"
+}

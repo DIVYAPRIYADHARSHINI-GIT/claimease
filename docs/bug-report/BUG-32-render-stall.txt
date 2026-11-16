@@ -1,0 +1,9 @@
+BUG-32 · observed documentation render stall
+2026-11-16T06:34:13Z start
+
+Report generation produced no progress output or updated report images for more than two minutes.
+Process inspection: node tools/build-bug-report.mjs remained active; its Chrome process was idle with no active renderer.
+The previous BUG_REPORT.pdf retained its earlier modification time.
+Task result: stopped after 2m 28s.
+
+No application or live deployment was affected. Underlying Chrome startup cause is not established.

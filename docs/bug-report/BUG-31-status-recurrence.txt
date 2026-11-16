@@ -1,0 +1,8 @@
+BUG-31 · same report-parser issue, status-field recurrence
+2026-11-16T06:38Z
+
+Error: Bug severity/status totals do not reconcile.
+    at tools/build-bug-report.mjs:5:129
+
+The new reconciliation assertion caught an Open status with an explanatory parenthesis.
+The report was not emitted with incorrect counts. Leading-label parsing now applies to both severity and status.

@@ -2,7 +2,7 @@
 
 16 November 2026 · Platform: Designer
 
-28 observed bugs: 26 Fixed, 2 Open. Original severity totals: Critical 3, High 12, Medium 6, Low 6.
+32 observed bugs: 30 Fixed, 2 Open. Original severity totals: Critical 3, High 12, Medium 10, Low 7.
 
 ## Summary
 
@@ -10,8 +10,8 @@
 |---|---:|---:|---:|
 | Critical | 3 | 2 | 1 |
 | High | 12 | 12 | 0 |
-| Medium | 6 | 6 | 0 |
-| Low | 6 | 5 | 1 |
+| Medium | 10 | 10 | 0 |
+| Low | 7 | 6 | 1 |
 
 The two open items are the Designer plan-tool restriction (original UI screenshot needed from the user) and residual low-severity development dependency advisories. BUG-03 retains its original Critical severity; all original high/critical dependency findings were removed. Production dependencies have zero advisories. No application workflow failure remains open in this report.
 
@@ -19,7 +19,7 @@ Evidence is real browser output, executed test/build output or an explicitly lab
 
 ## Verification
 
-459 unit/property/PDF-layout tests, 70 main browser checks, 8 storage scenarios, 12 extended workflow checks, 32 boundary viewport checks, one policy-panel UI regression and 192 screenshot/axe audits passed locally. The 70-check main browser suite also passed end-to-end in four configurations: desktop/mobile in light/dark themes. Final design audits contain zero serious/critical violations, page overflow, sub-12px visible text or undersized hit targets. Console/page errors were zero. See docs/verification and docs/DESIGN_QA.md.
+459 unit/property/PDF-layout tests, 70 main browser checks, 8 storage scenarios, 12 extended workflow checks, 32 boundary viewport checks, one policy-panel UI regression and 192 screenshot/axe audits passed locally. The 70-check main browser suite also passed end-to-end in four configurations: desktop/mobile in light/dark themes. Final design audits contain zero serious/critical violations, page overflow, sub-12px visible text or undersized hit targets. Console/page errors were zero. The public production site passed 75 live checks twice, including a repeat after the warning-free hosting rebuild; incognito access required no Vercel login and still seeded only fictional sample data. See docs/verification and docs/DESIGN_QA.md.
 
 ## BUG-01 — Workspace Git preflight failed
 
@@ -662,4 +662,99 @@ No after screenshot: issue remains open.
 ### After
 
 ![BUG-28 after](screenshots/BUG-28-after-fixed.png)
+
+## BUG-29 — Vercel's build environment produces an obsolete npm configuration warning
+
+- Date/time: 2026-11-16T06:01:35Z and 06:01:39Z; found during live build-log inspection at 06:05:40Z.
+- Where: actual Vercel production install/build log.
+- Steps: inspected the READY production deployment's real build log rather than relying only on the clean local build.
+- Expected: no new production build warnings.
+- Actual: `npm warn Unknown env config "cache-dir". This will stop working in the next major version of npm. See npm help npmrc for supported config options.` Exact quoted log excerpt is in BUG-29-build-warning.txt.
+- Severity: Medium.
+- Root cause: an obsolete npm cache-dir environment setting was supplied in the hosting build environment.
+- Fix: scoped install/build commands remove only that obsolete setting (case and separator variants), then run normal npm commands. No npm warning output is suppressed and no account-wide setting is changed.
+- Test added: inspect the next production deployment's real log for warnings/errors.
+- Verification: READY production commit a4911bf27160823038445ab996b80fe9cf25911c was inspected at 2026-11-16T06:21:05Z. Combined stdout/stderr contained 10,963 bytes, a completed build and zero warning/error lines; configured environment-variable names were empty and .env.local was absent.
+- Status: Fixed.
+- Before screenshot: `screenshots/BUG-29-before-production-warning.png`.
+- After screenshot: `screenshots/BUG-29-after-fixed.png`.
+
+### Before
+
+![BUG-29 before](screenshots/BUG-29-before-production-warning.png)
+
+### After
+
+![BUG-29 after](screenshots/BUG-29-after-fixed.png)
+
+## BUG-30 — First live receipt-preview readiness check timed out
+
+- Date/time: 2026-11-16T06:05:29Z.
+- Where: first full-flow browser run against the public production domain.
+- Steps: uploaded a synthetic receipt, then waited up to six seconds for the thumbnail image to be visible.
+- Expected: the preview readiness assertion passes and the test can open the receipt.
+- Actual: `TimeoutError: locator.waitFor: Timeout 6000ms exceeded` waiting for `.receipt-thumb img`. The capture taken immediately afterwards contains the receipt thumbnail and the successful local-storage toast; console errors were zero.
+- Severity: Medium.
+- Root cause: the verification sequence did not establish viewport/decoded-image readiness before asserting the preview. Storage and the thumbnail had succeeded by the failure capture. The precise original browser scheduling delay was not isolated, so no storage failure is claimed.
+- Fix: strengthen the real-user sequence by scrolling to the receipt control and checking decoded image dimensions; rerun on the live site without changing storage or extending the short timeout.
+- Test added: explicit image decode/viewport readiness and repeated public full-flow verification.
+- Verification: two complete 75-check public-site runs passed after the change, including a repeat after the clean hosting rebuild, without increasing the six-second timeout. Both runs had zero console/page errors; a separate fresh incognito context still contained only the 30 sample claims.
+- Status: Fixed.
+- Before screenshot: `screenshots/failure-2026-11-16T06-05-29-612Z.png`.
+- After screenshot: `screenshots/BUG-30-after-fixed.png`.
+
+### Before
+
+![BUG-30 before](screenshots/failure-2026-11-16T06-05-29-612Z.png)
+
+### After
+
+![BUG-30 after](screenshots/BUG-30-after-fixed.png)
+
+## BUG-31 — Report severity totals omitted an entry with an explanatory suffix
+
+- Date/time: 2026-11-16T06:31Z, final PDF review.
+- Where: generated bug report summary table and cover.
+- Steps: opened the final PDF and reconciled its severity totals against the 30 entries.
+- Expected: severity counts sum to the total number of bugs.
+- Actual: the cover showed 30 bugs but Critical 3 + High 12 + Medium 8 + Low 6 = 29. BUG-27's Medium severity included an explanatory parenthesis and was not counted by exact-string matching.
+- Severity: Low.
+- Root cause: the report generator parsed the entire severity line as the category instead of its leading severity label.
+- Fix: parse the leading allowed severity label while retaining the full original description, and fail report generation if either severity or status totals do not reconcile.
+- Test added: mandatory reconciliation assertions in the generator. A follow-up run at 06:38Z correctly failed with `Error: Bug severity/status totals do not reconcile.` because a later Open status also had a parenthetical suffix. The same leading-label parsing fix was applied to status; the assertion prevents another misleading report. Extra evidence: `screenshots/BUG-31-before-status-recurrence.png`.
+- Status: Fixed.
+- Before screenshot: `screenshots/BUG-31-before-severity-count.png`.
+- After screenshot: `screenshots/BUG-31-after-fixed.png`.
+
+### Before
+
+![BUG-31 before](screenshots/BUG-31-before-severity-count.png)
+
+### After
+
+![BUG-31 after](screenshots/BUG-31-after-fixed.png)
+
+## BUG-32 — Report renderer stalled while opening a fresh Chrome page
+
+- Date/time: 2026-11-16T06:34:13Z start; stopped after 2m28s.
+- Where: documentation-only bug-report generator.
+- Steps: reran report generation after correcting summary counts.
+- Expected: finish in seconds, as prior 4–8 second report runs did.
+- Actual: no progress output or new report images for more than two minutes; process inspection showed the report Node process and an idle Chrome process but no active renderer. The agent stopped the task after 2m28s. No application or live deployment was affected.
+- Severity: Medium.
+- Root cause: Chrome page startup stalled; the underlying platform cause is not established. The documentation script had no whole-process timeout.
+- Fix: run report generation under a 45-second child-process watchdog and Mac keep-awake wrapper; rerun with a fresh browser process.
+- Test added: watchdog rejects a stalled renderer rather than waiting indefinitely; verify output image count and PDF after rerun.
+- Verification: the watchdog-controlled fresh-browser rerun completed in eight seconds, with 32 entries and all 62 then-required evidence images decoded/embedded; it exited zero. The underlying one-off Chrome startup cause remains unknown, but the unbounded wait is removed.
+- Status: Fixed.
+- Before screenshot: `screenshots/BUG-32-before-render-stall.png` is a transcription of the observed process/timing evidence, not an application screen.
+- After screenshot: `screenshots/BUG-32-after-fixed.png`.
+
+### Before
+
+![BUG-32 before](screenshots/BUG-32-before-render-stall.png)
+
+### After
+
+![BUG-32 after](screenshots/BUG-32-after-fixed.png)
 

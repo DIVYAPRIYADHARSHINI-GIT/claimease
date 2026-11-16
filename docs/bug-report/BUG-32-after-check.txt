@@ -1,0 +1,9 @@
+BUG-32 · actual successful bounded report rerun
+2026-11-16T06:40Z
+
+Task exited with code 0 after 8 seconds.
+Bug report generated: 32 entries, 62 decoded/embedded images.
+
+The report process is now guarded by a 45-second watchdog and run with Mac keep-awake.
+This verification allows BUG-32 to close; its newly added after image will be included in the final regeneration.
+The underlying one-off Chrome startup cause is not claimed to be known.

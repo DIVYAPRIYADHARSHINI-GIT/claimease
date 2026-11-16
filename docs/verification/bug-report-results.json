@@ -1,15 +1,15 @@
 {
-  "time": "2026-11-16T06:00:28.695Z",
-  "bugs": 28,
+  "time": "2026-11-16T06:42:42.386Z",
+  "bugs": 32,
   "statuses": {
-    "Fixed": 26,
+    "Fixed": 30,
     "Open": 2
   },
   "severity": {
     "Critical": 3,
     "High": 12,
-    "Medium": 6,
-    "Low": 6
+    "Medium": 10,
+    "Low": 7
   },
-  "embeddedImages": 55
+  "embeddedImages": 63
 }
