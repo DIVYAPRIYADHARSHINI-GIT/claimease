@@ -1,0 +1,18 @@
+{
+  "time": "2026-11-16T06:10:52.620Z",
+  "base": "https://claimease-three.vercel.app",
+  "incognito": true,
+  "httpStatus": 200,
+  "vercelLoginRequired": false,
+  "sampleOnly": {
+    "claims": 30,
+    "users": 8,
+    "batches": 2,
+    "receipts": 30,
+    "session": null,
+    "nonFictionalEmails": 0
+  },
+  "externalOrUploadRequests": [],
+  "consoleErrors": [],
+  "passed": 4
+}

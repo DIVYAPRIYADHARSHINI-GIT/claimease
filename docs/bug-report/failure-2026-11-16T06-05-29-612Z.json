@@ -1,0 +1,7 @@
+{
+  "time": "2026-11-16T06:05:29.980Z",
+  "label": "real image upload compresses, previews and hashes locally",
+  "url": "https://claimease-three.vercel.app/claims/18c456df-def4-4d28-8159-d1f4d87f3fda",
+  "error": "TimeoutError: locator.waitFor: Timeout 6000ms exceeded.\nCall log:\n  - waiting for locator('.receipt-thumb img') to be visible\n",
+  "screenshot": "screenshots/failure-2026-11-16T06-05-29-612Z.png"
+}

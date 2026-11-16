@@ -1,0 +1,8 @@
+{
+  "checkedAt": "2026-11-16T06:05:40.855Z",
+  "buildCompleted": true,
+  "warningOrErrorLines": [
+    "2026-11-16T06:01:35.947Z  npm warn Unknown env config \"cache-dir\". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.",
+    "2026-11-16T06:01:39.368Z  npm warn Unknown env config \"cache-dir\". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options."
+  ]
+}

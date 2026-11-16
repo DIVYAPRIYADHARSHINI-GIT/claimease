@@ -1,6 +1,6 @@
 {
-  "step": "dark theme persists over direct reload",
-  "passed": 19,
+  "step": "real image upload compresses, previews and hashes locally",
+  "passed": 5,
   "errors": [],
-  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nnull !== 'dark'\n"
+  "error": "TimeoutError: locator.waitFor: Timeout 6000ms exceeded.\nCall log:\n  - waiting for locator('.receipt-thumb img') to be visible\n"
 }

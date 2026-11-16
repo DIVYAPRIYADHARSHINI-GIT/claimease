@@ -1,0 +1,22 @@
+{
+  "name": "claimease",
+  "git": {
+    "type": "github",
+    "org": "DIVYAPRIYADHARSHINI-GIT",
+    "repo": "claimease",
+    "branch": "main"
+  },
+  "environmentVariableNames": [],
+  "production": {
+    "id": "dpl_9PwPDTiioiuuG2VeLR5gdFt688Lt",
+    "state": "READY",
+    "commit": "924110b42ccc3cb75d47c1c0f8c1e9625748dd72"
+  },
+  "latest": [
+    {
+      "id": "dpl_9PwPDTiioiuuG2VeLR5gdFt688Lt",
+      "state": "READY",
+      "commit": "924110b42ccc3cb75d47c1c0f8c1e9625748dd72"
+    }
+  ]
+}

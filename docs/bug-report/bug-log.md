@@ -395,3 +395,31 @@ Local verification before deployment: 459 unit/property/PDF-layout tests; the 70
 - Status: Fixed.
 - Before screenshot: `screenshots/BUG-28-before-edit-request.png` is a message transcription; screenshot needed from the user only if the original tool UI is required.
 - After screenshot: `screenshots/BUG-28-after-fixed.png`.
+
+## BUG-29 — Vercel's build environment produces an obsolete npm configuration warning
+- Date/time: 2026-11-16T06:01:35Z and 06:01:39Z; found during live build-log inspection at 06:05:40Z.
+- Where: actual Vercel production install/build log.
+- Steps: inspected the READY production deployment's real build log rather than relying only on the clean local build.
+- Expected: no new production build warnings.
+- Actual: `npm warn Unknown env config "cache-dir". This will stop working in the next major version of npm. See npm help npmrc for supported config options.` Exact quoted log excerpt is in BUG-29-build-warning.txt.
+- Severity: Medium.
+- Root cause: an obsolete npm cache-dir environment setting was supplied in the hosting build environment.
+- Fix: scoped install/build commands remove only that obsolete setting (case and separator variants), then run normal npm commands. No npm warning output is suppressed and no account-wide setting is changed.
+- Test added: inspect the next production deployment's real log for warnings/errors.
+- Status: Open.
+- Before screenshot: `screenshots/BUG-29-before-production-warning.png`.
+- After screenshot: pending clean remote build.
+
+## BUG-30 — First live receipt-preview readiness check timed out
+- Date/time: 2026-11-16T06:05:29Z.
+- Where: first full-flow browser run against the public production domain.
+- Steps: uploaded a synthetic receipt, then waited up to six seconds for the thumbnail image to be visible.
+- Expected: the preview readiness assertion passes and the test can open the receipt.
+- Actual: `TimeoutError: locator.waitFor: Timeout 6000ms exceeded` waiting for `.receipt-thumb img`. The capture taken immediately afterwards contains the receipt thumbnail and the successful local-storage toast; console errors were zero.
+- Severity: Medium (live verification/readiness failure; no demonstrated storage loss).
+- Root cause: under investigation; the assertion did not explicitly bring the receipt area into the viewport or confirm image decoding. Exact browser timing is not yet proven.
+- Fix: strengthen the real-user sequence by scrolling to the receipt control and checking decoded image dimensions; rerun on the live site without changing storage or extending the short timeout.
+- Test added: explicit image decode/viewport readiness and repeated public full-flow verification.
+- Status: Open.
+- Before screenshot: `screenshots/failure-2026-11-16T06-05-29-612Z.png`.
+- After screenshot: pending live regression.
